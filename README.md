@@ -16,12 +16,5 @@ Iam using this page to show an overview of my progrss in this journey (List of C
 ## Coding Challenges
  - [First Challenge](...)
 
-## Guidelines
-- Commit to a consistent schedule and allocate sufficient time each day to complete the learning activities.
-- Take notes, document your progress, and maintain a personal learning log throughout the challenge.
-- Experiment, explore, and don't be afraid to make mistakes. Learning comes from both successes and failures.
-- Engage with the other GSG trainees. Seek support, share insights, and collaborate with fellow learners using the dedicated discussion telegram channel.
-- Celebrate your achievements and reflect on your growth throughout the challenge.
-
 ## Folder Structure
 -  [**Day 1**](...)
