@@ -1,7 +1,7 @@
 # Mastering JavaScript in 20 days 🚀
 
-Welcome to my repository for the journey of learning JavaScript from begining to profissional in 20 Days
-Iam using this page to show an overview of my progrss in this journey (List of Courses, Challenges, Daily Progress, and Refrencess for rest subpages)
+- Welcome to my repository for the journey of learning JavaScript from begining to profissional in 20 Days
+- Iam using this page to show an overview of my progrss in this journey (List of Courses, Challenges, Daily Progress, and Refrencess for rest subpages)
 
 
 ## Overview
