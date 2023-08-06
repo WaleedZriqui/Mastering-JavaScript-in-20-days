@@ -17,7 +17,7 @@ Modify the websites and making them interactive
 3. Online playground, ex: CodePen, CodeSandbox, ...
 
 
-###Dom
+### Dom
 #### What does DOM stand for?
 Document Object Model => Separates a context of the document to the tree have a root element and extends to other element and so on
 
