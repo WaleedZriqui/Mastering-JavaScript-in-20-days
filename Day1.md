@@ -54,7 +54,7 @@ myStr += ' This is the second sentence.' // Output: This is the first sentence. 
 
 // Exercise 3: Find the Nth-to-Last Character in a String
 const lastName = "Lovelace";
-const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Output: c
 
 ```
 
