@@ -59,5 +59,5 @@ const secondToLastLetterOfLastName = lastName[lastName.length - 2];
 ```
 
 ### At least
-Remeber that u don't need to remember all of that 🤔🤔
+> Remeber that u don't need to remember all of that 🤔🤔
 > U can use the [MDN](https://developer.mozilla.org/en-US/)
