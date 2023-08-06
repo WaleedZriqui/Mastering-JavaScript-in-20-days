@@ -17,4 +17,4 @@ Iam using this page to show an overview of my progrss in this journey (List of C
  - [First Challenge](...)
 
 ## Folder Structure
--  [**Day 1**](...)
+-  [**Day 1**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day1.md)
