@@ -7,9 +7,9 @@ This README file summarizes a general knowledge about JavaScript (What, Why, How
 ## Lesson Summary
 
 ### JavaScript
-#### What is Javasceipt? 
+#### What is Javascript? 
 It is a dynamic programming language of the web. 
-#### Why is Javasceipt? 
+#### Why is Javascript? 
 Modify the websites and making them interactive
 #### Where write Javascript?
 1. The browser's console 
