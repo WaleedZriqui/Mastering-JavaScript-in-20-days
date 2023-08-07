@@ -19,7 +19,7 @@ Modify the websites and making them interactive
 
 ### Dom
 #### What does DOM stand for?
-Document Object Model => Separates a context of the document to the tree have a root element and extends to other element and so on
+Document Object Model => When the web page is loaded, the browser creates a HTML DOM model is constructed as a tree  tree have a root element(object) and extends to other elements and so on
 
 ## Coding Examples
 
