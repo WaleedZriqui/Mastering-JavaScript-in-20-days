@@ -18,3 +18,5 @@ Iam using this page to show an overview of my progrss in this journey (List of C
 
 ## Folder Structure
 -  [**Day 1**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day1.md)
+-  [**Day 2**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day2.md)
+-  [**Day 3**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day3.md)
