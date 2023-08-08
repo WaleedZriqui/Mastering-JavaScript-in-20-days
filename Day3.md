@@ -231,8 +231,6 @@ arr = arr.slice(2, 4);
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
 2. 
-
-My solution:
 ```javaScript
 function spreadOut() {
   let fragment = ['to', 'code'];
@@ -243,8 +241,6 @@ function spreadOut() {
 console.log(spreadOut());
 ```
 3. 
-
-My solution:
 ```javaScript
 // Setup
 const contacts = [
@@ -295,8 +291,6 @@ lookUpProfile("Akira", "likes");
 ```
 
 4. 
-
-My solution:
 ```javaScript
 function reusableFunction() {
   console.log("Hi World");
@@ -305,8 +299,6 @@ reusableFunction();
 ```
 
 5. 
-
-My solution:
 ```javaScript
 // Setup
 let sum = 0;
@@ -326,8 +318,6 @@ addThree();
 addFive();
 ```
 6. 
-
-My solution:
 ```javaScript
 function timesFive(num) {
   return num*5;
