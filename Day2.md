@@ -71,6 +71,26 @@ document.querySelector("head h1").style.textTransforamation = "uppercase"
  
 let a 
 a // Output: undefined 
+
+"ALOHA"[0];      // “A”
+"ALOHA".length  // 5
+
+"ALOHA".indexOf("L");   //1 
+// What's the index of the first accourance of specific character
+// if not exist will return -1
+
+"ALOHA".includes("HA");  // true
+
+"ALOHA".startsWith("AL"); // true
+// Does this string start with some other string?
+
+"ALOHA".indexOf("HA"); // 3
+// At what index does this substring begin?
+
+"ALOHA" + "!" // "ALOHA!";
+ // Connecting strings together
+
+"ALOHA".toLowerCase() // "aloha";
 ```
 
 
