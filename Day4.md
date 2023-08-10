@@ -3,22 +3,52 @@
 This README file summarizes all of functions, Events & Handler 
 
 ## Lesson Summary
+
 ### Function 
+#### What is Function? 
+A JavaScript function is a block of code designed to perform a particular task. And executed when invokes it (calls it).
 
-A JavaScript function is a block of code designed to perform a particular task.
-A JavaScript function is executed when "something" invokes it (calls it).
+#### NOTES:💡
+1. values are things
+2. variables point to things
+3. functions do things
 
-
-values are things
-variables point to things
-functions do things
-
+#### What is difference between parameters and arguments? 
 parameters are the inputs a function expects
 arguments are the actual values the function is called with
 
-Parameters should be named like variables, and behave like variables within the function body
-
+#### What is retunr value? 
 Return values-> A return statement specifies the function's output value
+> The default return value of JS functions is `undefined`, so if a function doesn't have a `return` the return value of it will be `undefined`.
+
+
+```javaScript
+function add(x, y) { // x,y are parameters 
+  return x + y
+}
+add(2,3) // 2,3 are arguments 
+```
+```javaScript
+function add(x,y,z){
+    return x+y+z;
+}
+add(1,2); //NaN
+/*
+cuz we didn't pass the 3rd argument >>> JS will take it as undefined value 
+1+2+undefined= NaN >>> NaN is (not a number)
+typeof NaN = "number" 
+ex: 0/ 0 = NaN
+*/
+```
+```javaScript
+function getRandomNumber(){
+    return Math.random();
+}
+getRandomNumber("sth"); //0.56259486521546513
+/*
+JS will ignore that we passed an argument even when it doesn't have parameters
+*/
+```
 
 Arrow function-> The => "fat arrow" lets us create an unnamed function without much code
 Arrow functions are great when we just want to return a value
