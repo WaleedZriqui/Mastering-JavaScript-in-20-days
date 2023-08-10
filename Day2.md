@@ -94,7 +94,7 @@ a // Output: undefined
 ```
 
 
-### Coding Exercises with My Solution
+### Coding Exercises with my Solution
 
 #### QUESTION #1
 
