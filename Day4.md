@@ -27,7 +27,8 @@ For multiple parameters, parentheses are required
 
 If we need to do more than just return a value,
 we can use curly braces for a "normal" function body
-************************************************************************************
+
+
 ### Scope 
 The scope is the current context of execution in which values and expressions are "visible" or can be referenced. If a variable or expression is not in the current scope, it will not be available for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
 
@@ -52,7 +53,7 @@ const->Variables declared as const are in the block scope.
 Reassign the value:
 var-> allowed, let-> allowed, cost-> not allowed 
 
-*************************************************************************************
+
 ### Events & Handler 
 Events make our web page interactive!
 The web browser fires events when certain things happen on the page
@@ -71,7 +72,7 @@ A handler function that JS calls when that event is fired on this element
 
 JS passes an event object to the handler function with information about the event
 "click", "dblclick","mouseover,"mouseout"-> type of event we can handle
-*********************************************************************************************************************
+
 
 ## Coding Exercises and my Solution:
 
