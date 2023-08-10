@@ -34,30 +34,28 @@ document.getElementById("waleed").textContnent // Output: return text inside the
 ```
 
 
-## Coding Exercises
+## Coding Exercises with My Solution
 
-- [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
-- [Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
-- [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
-
-### My Solution
+1. [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 
 ```javascript
-// Exercise 1: Augmented Multiplication
 a *= 5; // a = a * 5  
 b *= 3; // b = b * 3
 c *= 10; // c = c * 10
-
-// Exercise 2: Concatenating Strings
-let myStr = 'This is the first sentence.';
-myStr += ' This is the second sentence.' // Output: This is the first sentence. This is the second sentence.
-
-// Exercise 3: Find the Nth-to-Last Character in a String
-const lastName = "Lovelace";
-const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Output: c
-
 ```
 
-### At least
+2. [Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
+```javascript
+let myStr = 'This is the first sentence.';
+myStr += ' This is the second sentence.' // Output: This is the first sentence. This is the second sentence.
+```
+
+3. [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
+```javascript
+const lastName = "Lovelace";
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Output: c
+```
+
+### At last
 > Remeber that u don't need to remember all of that 🤔🤔
 ##### U can use the [MDN](https://developer.mozilla.org/en-US/)
