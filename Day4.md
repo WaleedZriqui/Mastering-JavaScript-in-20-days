@@ -50,38 +50,40 @@ JS will ignore that we passed an argument even when it doesn't have parameters
 */
 ```
 
-Arrow function-> The => "fat arrow" lets us create an unnamed function without much code
-Arrow functions are great when we just want to return a value
-For one-parameter functions, parentheses are optional
-For multiple parameters, parentheses are required
-
-If we need to do more than just return a value,
-we can use curly braces for a "normal" function body
+#### How u can define function in JS? 
+1. function() keyword
+2. Arrow function =>
 
 
-### Scope 
-The scope is the current context of execution in which values and expressions are "visible" or can be referenced. If a variable or expression is not in the current scope, it will not be available for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
+#### What is arrow function? 
+It help create an unnamed function without much code when we just want to return a value. 
+* For one-parameter functions, parentheses are optional
+* For multiple parameters, parentheses are required
 
-JavaScript has the following kinds of scopes:
+> If we need to do more than just return a value, we can use curly braces for a "normal" function body
+> this keyword will have differents behavior when using it with noraml function than use it with arrow function (use MDN for that)
 
-Global scope: The default scope for all code running in script mode.
-Module scope: The scope for code running in module mode.
-Function scope: The scope created with a function.
+Since arrow functions are expressions, we can assign them to a variable:
+```javascript
+const add = (x,y) => x + y;
+is equivelant to
 
-In addition, variables declared with let or const can belong to an additional scope:
-Block scope: The scope created with a pair of curly braces (a block).
+function add (x,y){
+  return  x + y; //RETURN
+}
+```
 
-Within each scope, you can access variables declared in a wider scope (e.g. global scope)
-But not those declared in a narrower scope (e.g. function scope)
+### Scope
+#### What is Scope? 
+The scope is the current context of execution in which values and expressions are "visible" or can be referenced. If a variable or expression is not in the current scope, it will not be available for use. 
 
-Variables declared with let can be modified from within a narrower scope
+> Note: Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
 
-var->Variables declared with var are in the function scope
-let->Variables declared as let are in the block scope.
-const->Variables declared as const are in the block scope.
+Variables declared with let can be modified from within a narrower scope (nested) not wider 
 
-Reassign the value:
-var-> allowed, let-> allowed, cost-> not allowed 
+var: Variables declared with var are in the function scope
+let: Variables declared as let are in the block scope.
+const: Variables declared as const are in the block scope.
 
 
 ### Events & Handler 
