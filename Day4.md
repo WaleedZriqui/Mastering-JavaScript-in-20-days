@@ -81,26 +81,29 @@ The scope is the current context of execution in which values and expressions ar
 
 Variables declared with let can be modified from within a narrower scope (nested) not wider 
 
-var: Variables declared with var are in the function scope
-let: Variables declared as let are in the block scope.
-const: Variables declared as const are in the block scope.
+var: Variables declared with var are in the function scope 
+let: Variables declared as let are in the block scope
+const: Variables declared as const are in the block scope
 
 
 ### Events & Handler 
-Events make our web page interactive!
-The web browser fires events when certain things happen on the page
-For example, when the user clicks somewhere on the page, a click event is fired
+#### What is Events? 
+Events are the way to make our web page interactive!
 
-We can detect events with JS using an event listener
-The .addEventListener() method lets us listen for events on a DOM element
-ex:
+#### NOTES:💡
+1. The web browser fires events when certain things happen on the page
+2. For example, when the user clicks somewhere on the page, a click event is fired
+3. We can detect events with JS using an event listener, The .addEventListener() method lets us listen for events on a DOM element
+```javascript 
 document.addEventListener("click", () => {
     console.log("clicked")
 });
+```
 
+#### How we can handel Events? 
 .addEventListener() takes 2 parameters:
-The name of the event to listen to (e.g. "click")
-A handler function that JS calls when that event is fired on this element
+1. The name of the event to listen to (e.g. "click")
+2. A handler function that JS calls when that event is fired on this element
 
 JS passes an event object to the handler function with information about the event
 "click", "dblclick","mouseover,"mouseout"-> type of event we can handle
@@ -110,12 +113,9 @@ JS passes an event object to the handler function with information about the eve
 
 1. [Global Scope and Functionsr](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
 ```javascript
-
 let myGlobal=10;
-
 function fun1() {
   oopsGlobal=5
-
 }
 
 function fun2() {
@@ -141,7 +141,6 @@ function myLocalScope() {
 myLocalScope();
 
 console.log('outside myLocalScope', myVar);
-
 ```
 
 
@@ -166,7 +165,6 @@ function nextInLine(arr, item) {
   item=arr.shift()
   
   return item;
-  
 }
 
 // Setup
@@ -176,5 +174,4 @@ let testArr = [1, 2, 3, 4, 5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
-
 ```
