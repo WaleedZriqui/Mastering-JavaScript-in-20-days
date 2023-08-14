@@ -105,8 +105,14 @@ document.addEventListener("click", () => {
 1. The name of the event to listen to (e.g. "click")
 2. A handler function that JS calls when that event is fired on this element
 
-JS passes an event object to the handler function with information about the event
-"click", "dblclick","mouseover,"mouseout"-> type of event we can handle
+JS passes an event object to the handler function with information about the eventv (this is optional)
+> WE accept this as a parameter, we can use it to get details 
+```javascript 
+document.addEventListener("click", (event) => {
+    console.log(event)
+});
+```
+"click", "dblclick","mouseover,"mouseout", ...-> type of event we can handle
 
 
 ## Coding Exercises and my Solution:
@@ -115,20 +121,8 @@ JS passes an event object to the handler function with information about the eve
 ```javascript
 let myGlobal=10;
 function fun1() {
-  oopsGlobal=5
+  oopsGlobal=5 // Variables defined without let or var keyword become global variables. And 
 }
-
-function fun2() {
-  let output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
-console.log(spreadOut());
 ```
 
 
@@ -166,12 +160,4 @@ function nextInLine(arr, item) {
   
   return item;
 }
-
-// Setup
-let testArr = [1, 2, 3, 4, 5];
-
-// Display code
-console.log("Before: " + JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
 ```
