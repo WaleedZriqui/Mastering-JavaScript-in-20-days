@@ -1,10 +1,10 @@
-
 # Day 5: 
 
-This README file summarizes the JavaScript lesson on Conditionals and Map & filter. 
+This README file summarizes the JavaScript lesson on Conditionals, loops, and Map & filter. 
+
 ## Lesson Summary
 
-In this lesson, we explored Conditionals and Map & filter in JavaScript. Here are the key points covered:
+### Conditionals
 - If statement let us execute code under a certain condition (code in the if block only Runs if the condition is true )
 - We can use else to run other code if (condition) is false.
 - We can chain else and if blocks to account for multiple conditions.
@@ -21,7 +21,9 @@ In this lesson, we explored Conditionals and Map & filter in JavaScript. Here ar
    - The || requires only one value to be truthy .
 - Conditional ternary operator ( JavaScript has a shortcut operator for writing quick conditionals if we need 3 values to work).
    - let x= condition ? value if true : value if false 
-- Loops let us run the same chunk of code multiple times
+
+### Loops
+Loops let us run the same chunk of code multiple times
    - for( initialize loop counter , condition (to keep the loop running ) ,how to change the counter ){ chunk of code }
    - while(condition ){chunk of code) // let us run code over and over if condition is true
    - for ...of loops let us more easily iterate over items in a collection ,and we can use it to  iterate over characters in a string
