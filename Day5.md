@@ -13,36 +13,75 @@ This README file summarizes the JavaScript lesson on Conditionals, loops, and Ma
    - if(0) //false
    - if(undefined) //false
    - if(null) //false
-   - if("") //false
+   - if("") //false (because it's immutable)
    - if([]) //true  objects are truthy
 - Boolean logical operator:
-   - The ! operator negates a boolean !true=false
-   - The && we care about truthiness  of more than one value
-   - The || requires only one value to be truthy .
+   - The ! operator negates a boolean (!true=false)
+   - The && we care about truthiness of more than one value (will be true only if both values are true) 
+   - The || requires only one value to be truthy 
 - Conditional ternary operator ( JavaScript has a shortcut operator for writing quick conditionals if we need 3 values to work).
-   - let x= condition ? value if true : value if false 
+   - let x = condition ? valueIfTrue : valueIfFalse 
 
 ### Loops
 Loops let us run the same chunk of code multiple times
-   - for( initialize loop counter , condition (to keep the loop running ) ,how to change the counter ){ chunk of code }
-   - while(condition ){chunk of code) // let us run code over and over if condition is true
-   - for ...of loops let us more easily iterate over items in a collection ,and we can use it to  iterate over characters in a string
-      - for (let char of "ALOHA")
-      - for(let num of numbers) // array of numbers
-- maps and filter : methods let us process all the items  in the array.
-- filter calls a true\false function and creates a new array with only the items where the function return true .
-- spread we can use it to put all the items from one array inside another array
+   - For loop 
+   ```javascript
+    for(let count=0; count<10; count++){ 
+    console.log(count)}
+    ```
+   - while(condition){chunk of code} // let us run code over and over if condition is true
+   - for ...of iterable loop: let us more easily iterate over items in a collection ,and we can use it to  iterate over characters in a string
+      - With String   
+      ```javascript
+      for (let char of "ALOHA"){
+      console.log(char)}
+      ```
+      - With array 
+      ```javascript
+      const numbers = [1,2,3]
+      for(let n of numbers){ 
+      console.log(n)}
+      ```
+
+### Map & filter
+- maps and filter : methods let us process all the items in the array
+> They are not mutate the array, only take a copy 
+- Map calls a function on each item in an array to create a new array 
+```javascript
+const spices = [
+  {name:"Emma", nickname: "Baby"}, 
+  {name:"Geri", nickname: "Ginger"}
+];
+const nicknames = spices.map(s => s.nickname + " Spices"); // Output: ["Baby Spices", "Ginger Spices"]
+// Or u can use backtickes (String template) above s => `${s.nickname} Spices`
+```
+- Filter calls a true\false function and creates a new array with only the items where the function return true 
+```javascript
+const mels = spices.filter(s => s.name.include("ma")); // Output: [{name:"Emma", nickname: "Baby"}]
+```
+- Reduce used to cmobine every items in one array 
+- Spread we can use it to put all the items from one array inside another array
+```javascript
+const oldBurns = ["sqquare", "wack"]
+const newBurns = ["basic", "dusty", "sus"]
+const burnBook = [...oldBurns, ...newBurns] // Output: ["sqquare", "wack", "basic", "dusty", "sus"]
+// is same as oldBurns.concat(newBurns)
+```
+```javascript
+const skills = ["HTML", "CSS", "JS"]
+const newSkills = ["React", "TypesScript", "Node"]
+skills.push(...newSkills) // Output: ["HTML", "CSS", "JS", "React", "TypesScript", "Node"]
+console.log(...skills) // Output: HTML CSS JS React TypesScript Node
+```
 - JavaScript can only do one task at a time ("single-threaded").
 - When we give JavaScript a task that takes a while it doesnot stop and wait it adds the slow task to a TODO list and keeps on running our program the task runs sometimes later (Async) somethings take time:
    - waiting for user events.
    - asking a user to pick a file.
    - getting permission access camera/mic.
    - loading data from the interwebs .
-- String templates are useful tool make them eith backticks and ${} e.g :
-    - ` My name is ${VariableName} `.
-    - `1 plus 2 equal ${1+2}`.
 - The setTimeout() method executes a block of code after the specified time. setTimeout(function , time in milliseconds) 
- 
+
+
 ## Coding Examples
 Example 1:
 ```html
