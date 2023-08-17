@@ -110,8 +110,7 @@ options.appendChild(button)
 ```
 
 ### Module scope:
-> ### 💡 Note:
-> We can't access variables and functions in the web console.
+We can't access variables and functions in the web console.
 
 
 ### Debugging: 
