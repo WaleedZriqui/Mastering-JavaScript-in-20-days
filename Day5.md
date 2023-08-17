@@ -1,6 +1,6 @@
 # Day 5: 
 
-This README file summarizes the JavaScript lesson on Conditionals, loops, and Map & filter. 
+This README file summarizes Conditionals, loops, and Map & filter. 
 
 ## Lesson Summary
 
