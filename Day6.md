@@ -57,27 +57,32 @@ let body = await response.json();
 Destructuring is a fancy way of declaring multiple variables at once, by "extracting" values from an object with their property names.
 
 ```javaScript
-const spices = [{name:"Aya", nickname:"Butterfly"}]
-let {name, nickname} = spices[0]; //ordering is important when destructuring object
+const spices = [{name:"Waleed", nickname:"AbuKhalid"}]
+// name = spices[0].name;
+// nickname = spices[0].nickname;
+let {name, nickname} = spices[0]; //name= Waleed, nickname= AbuKhalid 
+let {nickname, name} = spices[0]; //nickname= AbuKhalid, name= Waleed 
 ```
+> ordering is NOT important when destructuring object
 
-### Use it with array 
+
+#### Destructuring Data with array 
 
 ```javaScript
-const [one, tow ] = [1,2] //ordering is important when destructuring arrays
+const [one, tow] = [1, 2] //one=1, tow=2
 
 // We can ignore the values in the array we don't need
-const [,,melB] = spices;
+const [a, b] = [1, 2, 3, 4, 5] //a=1, b=2
+
+// We can use commas to "Skip" values
+const [,,a,,c] = [1, 2, 3, 4, 5] // a=3, c=5
 
 // We can use ... to collect remaining values
  const [babySpice, ...adultSpices] = spices;
 ```
-#### 💡**NOTE:**
-> Order is important when destructuring arrays but not in objects.
-
+> ordering is important when destructuring arrays
 
 ## `async`
-
 If we try to `await` something in a *regular function*, ***JS doesn't allow it*** >>> we have to write an `async` function.
 
 
