@@ -12,6 +12,7 @@ Iam using this page to show an overview of my progrss in this journey (List of C
 
 ## Courses
  - [JavaScript: From First Steps to Professional](https://frontendmasters.com/courses/javascript-first-steps/)
+ - [JavaScript: The Hard Parts, v2](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
 
 ## Coding Challenges
  - [First Challenge](...)
