@@ -1,6 +1,10 @@
 # Day 8: 
 
-## Clousers 
+This README file summarizes Clousers 
+
+## Lesson Summary
+
+### Clousers 
 In JavaScript, closures are an important concept that allows functions to access variables from their outer lexical environment even after the outer function has finished executing. 
 
 A closure is created when an inner function is returned from an outer function and still has access to its lexical scope, including the variables and parameters of the outer function.
@@ -12,14 +16,14 @@ Closures are powerful because they allow functions to retain access to the varia
 - Lexical scoping describes how the JavaScript engine uses the location of the variable in the code to determine where that variable is available.
 - A closure is a combination of a function and its ability to remember variables in the outer scope.
 
-## Functions with memories
+### Functions with memories
 -the Functions get a new memory every run/invocation
 - When our functions get called, we create a live store of data (local
 memory/variable environment/state) for that function’s execution context.
 - When the function finishes executing, its local memory is deleted (except the
 returned value)
 
-## Calling a function in the same function call as it was defined
+### Calling a function in the same function call as it was defined
 ```javascript
 function outer (){
  let counter = 0;
@@ -30,7 +34,7 @@ function outer (){
 }
 outer();
 ```
-## Calling a function outside of the function call in which it was defined
+### Calling a function outside of the function call in which it was defined
 ```javascript
 function outer (){
  let counter = 0;
@@ -42,7 +46,9 @@ myNewFunction();
 myNewFunction();
 ```
 
+
 ## Coding Exercises and My solutuon
+
 ### [Exercise 1:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
 Write a closure named createCounter that takes an initial value start and returns a function. The returned function, when invoked, should increment the counter by 1 and return the updated value.
 
