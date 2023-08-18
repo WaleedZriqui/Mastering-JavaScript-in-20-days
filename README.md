@@ -27,3 +27,4 @@ Iam using this page to show an overview of my progrss in this journey (List of C
 -  [**Day 7**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day7.md)
 -  [**Day 8**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day8.md)
 -  [**Day 9**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day9.md)
+-  [**Day 10**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day10.md)
