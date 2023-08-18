@@ -59,7 +59,7 @@ let prom1 = new Promise((resolve, reject)=>{
 ```
 
 
-## Coding Exercises
+## Coding Exercise and my Solution:
 
 ### [Exercises for Async JS & Promises](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
 
