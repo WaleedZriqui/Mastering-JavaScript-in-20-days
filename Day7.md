@@ -4,22 +4,19 @@ This README file summarizes JavaScript principles, Callbacks & Higher Order func
 
 ## Lesson Summary
 
-### JavaScript principles:
+### JavaScript principles (How will code run in JS):
 When JavaScript code runs, it:
-Goes through the code line-by-line and runs/ ’executes’ each line - known as the thread of execution
-Saves ‘data’ like strings and arrays so we can use that data later - in its memory
-We can even save code (‘functions’)
+- Goes through the code line-by-line and runs/ ’executes’ each line - known as the thread of execution
+- Saves ‘data’ like strings and arrays so we can use that data later - in its memory. We can even save code (‘functions’)
+
+### Execution context
+Code we save (‘define’) functions & can use (call/invoke/execute/run) later with the function’s name & ( )
 
 Functions Created to run the code of a function - has 2 parts
 - Thread of execution
 - Memory
-  
-Execution context
-Code we save (‘define’) functions &
-can use (call/invoke/execute/run)
-later with the function’s name & ( )
 
-###  Call Stack
+###  Call Stack (LIFO)
 call stack-> JavaScript keeps track of what function is currently running (where’s the thread of execution)
 - Run a function - add to call stack
 - Finish running the function - JS removes it from call stack
@@ -55,7 +52,7 @@ They can co-exist with and can be treated like any other javascript object
 An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage
 
 
-## Coding Exercises
+## Coding Exercise and my Solution:
 
 ### [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 ```javascript
