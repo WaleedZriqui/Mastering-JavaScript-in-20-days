@@ -54,7 +54,7 @@ They can co-exist with and can be treated like any other javascript object
 ## Arrow function expressions
 An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage
 
-*********************************************************************************************************************
+
 ## Coding Exercises
 
 ### [Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
