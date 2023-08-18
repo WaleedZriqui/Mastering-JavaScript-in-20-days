@@ -94,24 +94,37 @@ async function getData(){
 await getData()
 ```
 
-### `createElement()` 
+- `createElement()` 
 In an HTML document, the document`.createElement()` method creates the HTML element specified by tagName
 
 ```javaScript
 const button = document.createElement("button")
 ```
 
-
-### `appendChild()` 
+- `appendChild()` 
 The`.appendChild()` method of the Node interface adds a node to the end of the list of children of a specified parent node.
 
 ```javaScript
 options.appendChild(button)
 ```
 
-### Module scope:
-We can't access variables and functions in the web console.
+### Module 
+Modules let us split big codebases across multiple files to let it easier work with them 
+> To use the keyword 'await' out of script, while define the script tag we should adding the type="module", <script type='module'>
 
+#### Module scope:
+It's the sceond point of the differnce 'first one is await'. We can't access variables and functions in the web console since modules create their own space 
+
+> And in this case we should use import & export
+```javaScript
+// mymodule.js
+const a = () => "Waleed" 
+export {a}
+```
+```javaScript
+// othermodule.js
+import {a} from './mymodule.js' 
+```
 
 ### Debugging: 
 We can `console.log()` or `console.warn()` or `console.error()` is one way to understand what's happening when your program runs
@@ -124,7 +137,7 @@ function whyIsntThisWorking(input) {
 }
 ```
 
-You can also use the browser's debugger to pause JS and inspect what's happening, The `debugger` statement creates a *breakpoint* where JS will pause and let you look around:
+* We can also use the browser's debugger to pause JS and inspect what's happening, The `debugger` statement creates a *breakpoint* where JS will pause and let you look around:
 
 ```javaScript
 function whyIsntThisWorking(input) {
@@ -132,16 +145,9 @@ function whyIsntThisWorking(input) {
     return thingThatDoesntWork(input);
 }
 ```
-
-
-💡 **Notes:**
-1. **`trim()`** method removes whitespace from both ends of a string and returns a new string, without modifying the original string.
-2. In `JS` we can create any element we want to appear in HTML page.
    
 ### `try` & `catch` Error Handling
-
-`try` lets us "watch out" for potential errors, its friend `catch` lets us manage errors when they occur:
-
+`try` lets us "watch out" for potential errors, its friend `catch` lets us manage errors when they occur
 ```javaScript
 try {
     thisMightThrowAnError();
@@ -152,6 +158,9 @@ try {
 console.log("still rollin' with the homies");
 ```
 
+### 💡 **Notes:**
+1. **`trim()`** method removes whitespace from both ends of a string and returns a new string, without modifying the original string.
+2. In `JS` we can create any element we want to appear in HTML page.
 
 
 ## Coding Exercise and my Solution:
