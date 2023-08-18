@@ -1,5 +1,7 @@
 # Day 7:
 
+This README file summarizes JavaScript principles, Callbacks & Higher Order functions 
+
 ## Lesson Summary
 
 ### JavaScript principles:
