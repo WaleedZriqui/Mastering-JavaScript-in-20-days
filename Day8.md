@@ -60,85 +60,79 @@ Here 👆 for the first time, we would think that this way will not work correct
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8d83e1d7-419c-4646-b313-4e6d235ff2f3)
 
+> To access the variable 'counter' from myNewFunction we should use .Scope.counter 
+> The ‘backpack’ (or ‘closure’) of live data is attached incrementCounter (then to myNewFunction) through a hidden property known as `[[scope]]` which persists when the inner function is returned out
+
+#### What can we call this ‘backpack’?
+- Closed over ‘Variable Environment’ (C.O.V.E.)
+- Persistent Lexical Scope Referenced Data (P.L.S.R.D.)
+- 'Backpack'
+- 'Closure'
+
+#### What happen if we run outer again?
+```javascript
+function outer (){
+ let counter = 0;
+ function incrementCounter (){ counter ++; }
+ return incrementCounter;
+}
+const myNewFunction = outer();
+myNewFunction(); // counter = 1
+myNewFunction(); // counter = 2 
+
+const anotherFunction = outer();
+anotherFunction(); // counter = 1
+anotherFunction(); // counter = 2
+
+//Every one will got his backpack, is know as 'Individual backpacks'  
+```
+
+#### Clousers Applications:
+- Helper functions: Everyday professional helper functions like ‘once’ and ‘memoize’ (used to make the function running only one time and memoization data to not rerun the funcation again if we already run it and have data)
+- Asynchronous JavaScript: Callbacks and Promises rely on closure to persist state pin an asynchronous environment
 
 ## Coding Exercises and My solutuon
 
-### [Exercise 1:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
-Write a closure named createCounter that takes an initial value start and returns a function. The returned function, when invoked, should increment the counter by 1 and return the updated value.
-
+### [Question 1:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
 ```javascript
-const squareList = arr => {
-  const arr1= arr.filter(num => num > 0 && num % parseInt(num) === 0)
-          .map(num => Math.pow(num, 2));
-  return arr1
-
-};
-
-const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
-console.log(squaredIntegers);
+function createCounter (num){
+ function incrementCounter (){ num ++; }
+ return incrementCounter;
+}
 ```
 
-### [Exercise 2:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
-Write a closure named calculateAverage that takes an array of numbers, nums, and returns a function. The returned function, when invoked, should calculate and return the average of the numbers in the array.
-
+### [Question 2:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
 ```javascript
-function calculateAverage(ArrayOfNumber){
-   
-  function innerAverage (){ 
-    let sum =0
-    for(let i=0;i<ArrayOfNumber.length;i++){
-      sum=sum+ArrayOfNumber[i];
+function calculateAverage (nums){
+  function findAvg (){
+    let avg = 0;
+    for (let i of nums){
+        avg += i
     }
-    let result=sum/ArrayOfNumber.length;
-    return result;
-   }
-  return innerAverage;
+    avg /= nums.length
+    return avg
  }
- const myNewFunction = calculateAverage([1,2,3,4,5,6,7,8,9,10]);
- const result=myNewFunction();
- console.log(result);
+ return findAvg;
+}
 ```
 
-### [Exercise 3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
-Write a closure named powerOf that takes a base number base and returns a function. The returned function, when invoked with an exponent exp, should calculate and return the result of base raised to the power of exp.
-
+### [Question 3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
 ```javascript
-function powerOf(baseNumber){
-   
-  function exponent (exp){ 
-    return Math.pow(baseNumber,exp)
-   }
-  return exponent;
- }
- const myNewFunction = powerOf(2);
- const result=myNewFunction(5);
- console.log(result);
+function powerOf (base){
+ function findPower (exp){ return Math.pow(base,exp)}
+ return findPower;
+}
 ```
 
-### [Exercise 4:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
-Write a closure named compose that takes multiple functions as arguments and returns a new function. The returned function should apply the provided functions in reverse order, passing the result of each function as an argument to the next function.
+### [Question 4:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
 ```javascript
-function add10(x) {
-  return x + 10;
-}
-
-function multiply2(x) {
-  return x * 2;
-}
-
-function subtract3(x) {
-  return x - 3;
-}
-
-function compose(...functions) {
-  return function(arg) {
-    for (let i = functions.length - 1; i >= 0; i--) {
-      arg = functions[i](arg);
+function compose (...functions){
+    const reverse = functions.reverse()
+    function newFunc (arg){
+        for(let i = 0; i<reverse.length; i++){
+            arg = reverse[i](arg)
+        }
     }
-    return arg;
-  };
+    return newFunc()
 }
-
-const composedFunction = compose(subtract3, multiply2, add10);
-console.log(composedFunction(10));
 ```
