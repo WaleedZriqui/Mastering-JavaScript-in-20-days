@@ -1,4 +1,4 @@
-![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b8c2a095-d098-4bcb-ade5-a2a726186f42)# Day 8: 
+# Day 8: 
 
 This README file summarizes Clousers 
 
@@ -18,7 +18,7 @@ const generatedFunc = createFunction();
 const result = generatedFunc(3); //here generatedFunc() has a definition of function multiplyBy2() as a result of excution one time for createFunction()
 ```
 
-<img src='![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/a96c1ae8-8b01-4531-b81a-fb50e6f062a2)'>
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b8c2a095-d098-4bcb-ade5-a2a726186f42)
 
 #### Notes: 💡
 - We can declear variables and saved then inside running of another function. Not used there but instead returned them out 
