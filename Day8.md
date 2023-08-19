@@ -5,11 +5,23 @@ This README file summarizes Clousers
 ## Lesson Summary
 
 ### Clousers 
-In JavaScript, closures are an important concept that allows functions to access variables from their outer lexical environment even after the outer function has finished executing. 
+In JavaScript, closures are an important concept that allows functions to access variables from their outer lexical environment even after the outer function has finished executing. It all starts with us returning a function from another function
 
-A closure is created when an inner function is returned from an outer function and still has access to its lexical scope, including the variables and parameters of the outer function.
+```javascript
+function createFunction() {
+  function multiplyBy2 (num){
+    return num*2;
+  }
+  return multiplyBy2;
+}
+const generatedFunc = createFunction();
+const result = generatedFunc(3); //here generatedFunc() has a definition of function multiplyBy2() as a result of excution one time for createFunction()
+```
 
-A closure is a function that preserves the outer scope in its inner scope.
+#### Notes: 💡
+- We can declear variables and saved then inside running of another function. Not used there but instead returned them out 
+- A closure is created when an inner function is returned from an outer function and still has access to its lexical scope, including the variables and parameters of the outer function.
+- A closure is a function that preserves the outer scope in its inner scope.
 
 Closures are powerful because they allow functions to retain access to the variables they need, even when they are invoked outside their original lexical scope. This behavior enables advanced patterns and techniques in JavaScript programming.
 
