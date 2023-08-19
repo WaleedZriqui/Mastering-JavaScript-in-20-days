@@ -18,7 +18,7 @@ const generatedFunc = createFunction();
 const result = generatedFunc(3); //here generatedFunc() has a definition of function multiplyBy2() as a result of excution one time for createFunction()
 ```
 
-``html
+```html
 <img src='![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/a96c1ae8-8b01-4531-b81a-fb50e6f062a2)'>
 ```
 
