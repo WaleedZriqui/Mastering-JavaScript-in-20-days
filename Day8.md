@@ -58,7 +58,7 @@ myNewFunction();
 ```
 Here 👆 for the first time, we would think that this way will not work correctly way, because when we try to execute the function incrementCounter() we will not find the counter variable. But that's wrong because when we return the function we also return the whole local memory that exists (i.e. When a function is defined, it gets a bond to the surrounding Local Memory (“Variable Environment”) in which it has been defined) so it will work in correct way and this is known as a 'backpack'
 
-![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8d83e1d7-419c-4646-b313-4e6d235ff2f3)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f597a8a9-e03f-4574-9feb-86296d5a8abf)
 
 > To access the variable 'counter' from myNewFunction we should use .Scope.counter 
 > The ‘backpack’ (or ‘closure’) of live data is attached incrementCounter (then to myNewFunction) through a hidden property known as `[[scope]]` which persists when the inner function is returned out
