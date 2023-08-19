@@ -15,7 +15,7 @@ function createFunction() {
   return multiplyBy2;
 }
 const generatedFunc = createFunction();
-const result = generatedFunc(3);
+const result = generatedFunc(3); // Output: 6
 //here generatedFunc() has a definition of function multiplyBy2() as a result of excution one time for createFunction()
 ```
 
@@ -25,20 +25,15 @@ const result = generatedFunc(3);
 - We can declear variables and saved then inside running of another function. Not used there but instead returned them out 
 - A closure is created when an inner function is returned from an outer function and still has access to its lexical scope, including the variables and parameters of the outer function.
 - A closure is a function that preserves the outer scope in its inner scope.
+- the Functions get a new memory every run/invocation
+- When our functions get called, we create a live store of data (local memory/variable environment/state) for that function’s execution context.
+- When the function finishes executing, its local memory is deleted (except the returned value)
+
 
 Closures are powerful because they allow functions to retain access to the variables they need, even when they are invoked outside their original lexical scope. This behavior enables advanced patterns and techniques in JavaScript programming.
 
-- Lexical scoping describes how the JavaScript engine uses the location of the variable in the code to determine where that variable is available.
-- A closure is a combination of a function and its ability to remember variables in the outer scope.
 
-### Functions with memories
--the Functions get a new memory every run/invocation
-- When our functions get called, we create a live store of data (local
-memory/variable environment/state) for that function’s execution context.
-- When the function finishes executing, its local memory is deleted (except the
-returned value)
-
-### Calling a function in the same function call as it was defined
+#### Calling a function in the same function call as it was defined
 ```javascript
 function outer (){
  let counter = 0;
@@ -49,7 +44,8 @@ function outer (){
 }
 outer();
 ```
-### Calling a function outside of the function call in which it was defined
+
+#### Calling a function outside of the function call in which it was defined
 ```javascript
 function outer (){
  let counter = 0;
@@ -57,9 +53,10 @@ function outer (){
  return incrementCounter;
 }
 const myNewFunction = outer();
-myNewFunction();
+myNewFunction();  
 myNewFunction();
 ```
+Here 👆 for the first time, we would think that this way will not work correctly way, because when we try to execute the function incrementCounter() we will not find the counter variable. But that's wrong because when we return the function we also return the whole local memory that exists (i.e. When a function is defined, it gets a bond to the surrounding Local Memory (“Variable Environment”) in which it has been defined) so it will work in correct way and this is known as a 'backpack'
 
 
 ## Coding Exercises and My solutuon
