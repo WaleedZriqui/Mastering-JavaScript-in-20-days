@@ -35,6 +35,8 @@ Me First
 Hello (without dellay) 
 */ 
 ```
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/38052a44-506f-40e8-b94f-ea7763069cc5)
+
 => So JavaScript is not enough - We need new pieces (some of which aren’t JavaScript at all)
 
 #### Our core JavaScript engine has 3 main parts
