@@ -19,7 +19,7 @@ const result = generatedFunc(3);
 //here generatedFunc() has a definition of function multiplyBy2() as a result of excution one time for createFunction()
 ```
 
-![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b8c2a095-d098-4bcb-ade5-a2a726186f42)
+![image](![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8f7ccb83-e4a2-490f-9674-cf448e75ba89))
 
 #### Notes: 💡
 - We can declear variables and saved then inside running of another function. Not used there but instead returned them out 
