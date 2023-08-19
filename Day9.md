@@ -4,18 +4,57 @@ This README file summarizes the JavaScript lesson on Async JavaScript and Promis
 
 ## Lesson Summary
 
-In this lesson, we explored Async JavaScript and Promises in JavaScript. Here are the key points covered:
-- JavaScript is a single threaded language  (one command runs at a time)
-- Synchronously executed (each line is run in order the code appear).
-- Our core JavaScript engine has 3 main parts
-   - Thread of execution
-   - Memory / variable environment
-   - callstack
+
+### Async JavaScript 
+
+#### JS is: 
+- Single threaded language  (one command runs at a time)
+- Synchronously executed (each line should be finished before move to another line)
+
+So here what we should do if we need time to excute a line of JS? 
+A one of answer we can use the bulit in function setTimeOut(), but there is an issue on it:
+```javascript
+function printHello(){
+  console.log("Hello");
+}
+setTimeout(printHello,1000);
+console.log("Me first!");
+/* Output:
+Me First
+Hello (after 1 sec) 
+*/ 
+```
+```javascript
+function printHello(){
+  console.log("Hello");
+}
+setTimeout(printHello,0);
+console.log("Me first!");
+/* Output:
+Me First
+Hello (without dellay) 
+*/ 
+```
+=> So JavaScript is not enough - We need new pieces (some of which aren’t JavaScript at all)
+
+#### Our core JavaScript engine has 3 main parts
+* Thread of execution (execution context)
+* Memory / variable environment
+* callstack
+
+#### What is difference between 'Synchronous Programming' and 'Asynchronous programming'?
+- Synchronous programming is where the computer will complete one task before moving on to the next. (Do nat need time)
+- Asynchronous programming in JavaScript handle tasks that may take some time to complete, such as fetching data from a server or reading a file. There are several ways to achieve asynchronous programming in JS callback functions, promises, and the newer async/await syntax.
+
+
+
+
 - JavaScript engin part of web browser.
 - JavaScript doesn't have the feature of a timer the browser provides the timer feature which JavaScript takes advantage of by using setTimeOut.
 - Some Javascript features are actually Browser APIs e.g (document , setTimeout , console , fetch ).
 - Functions that need to be asynchronously executed, are pushed onto the callback queue .
 - When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
+
 - A Promise is a JavaScript object that links producing ( takes some time ) code and consuming code (wait for a result).
 - then(resolve , reject )
    - resolve : method is called whenever a promise is resolved It takes data from the resolved promise.
