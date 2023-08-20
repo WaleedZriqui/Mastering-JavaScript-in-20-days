@@ -36,7 +36,6 @@ Hello (without dellay)
 */ 
 ```
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/38052a44-506f-40e8-b94f-ea7763069cc5)
-![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/63bd7449-1407-4319-b439-8dd9a8c81fd7)
 
 
 => So JavaScript is not enough - We need new pieces (some of which aren’t JavaScript at all)
@@ -58,6 +57,7 @@ We have rules for the execution of our asynchronously delayed code Hold promise-
 A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4896591b-28dd-4291-a3e7-52c18180b8f0)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/63bd7449-1407-4319-b439-8dd9a8c81fd7)
 
 
 
