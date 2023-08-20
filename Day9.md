@@ -121,7 +121,7 @@ blockFor300ms();
 console.log("Me first!");
 ```
 
-![Screenshot (253)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/0dc56074-37c5-448e-b82d-4522871faeed)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/ff0c78f5-2877-408a-a665-9a9f4edc664b)
 
 ####  Order of execution: 
 We have three things to organize the execution:
