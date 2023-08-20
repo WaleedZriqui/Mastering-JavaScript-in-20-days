@@ -51,7 +51,7 @@ Hello (without dellay)
 
 
 We have rules for the execution of our asynchronously delayed code Hold promise-deferred functions in a microtask queue and callback function in a task queue (Callback queue) when the Web Browser Feature (API) finishes add the function to the Call stack (i.e. run the function) when:
-- Call stack is empty & all global code run (Have the Event Loop check this condition)
+- Call stack is empty & all global code run (Have the Event Loop check this condition). It's very important also to finish excute all global() code, so if the callstack() is empty but there are still rows in global() the queue will wait
 - Prioritize functions in the microtask queue over the Callback queue
 - Call stack
 A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
@@ -59,7 +59,7 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4896591b-28dd-4291-a3e7-52c18180b8f0)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/63bd7449-1407-4319-b439-8dd9a8c81fd7)
 
-> We look to the Queue when the stack is empty (Queu is for asynchronous) and it's the definition of **Event Loop**
+> We look to the Queue when the stack is empty and all global() code are finished (Queue is for asynchronous) and this is the definition of **Event Loop**
 
 #### Notes: 
 1. JavaScript engin part of web browser.
@@ -74,7 +74,8 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 * Special objects built into JavaScript that get returned immediately when we make a call to a web browser API/feature (e.g. fetch) that’s set up to return promises (not all are).
 * A Promise is a JavaScript object that links producing ( takes some time ) code and consuming code (wait for a result).
 * Promises act as a placeholder for the data we expect to get back from the web browser feature’s background work.
-* Promises object has two propoties (value, onfolyfilled) 
+* Promises object has two propoties (value, onFulfilment[array]) 
+* Value is passed to functions on onFulfilment while exceution using .then() 
 * Promises are excuted like the same way we did for 'setTimeOut()' above 
 
 ```javaScript
@@ -93,7 +94,7 @@ A `promise object`, it's just an object *automatically created* in JavaScript by
 
 It has 3 properties:
 1. `Value` which is `undefined`.
-2. `onFulfilled` which is an `empty array` - it's a hidden property.
+2. `‘onFulfilment` which is an `empty array` - it's a hidden property.
 2. `onRjection` which is an `empty array` - it's a hidden property.
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f36c527a-42b4-4329-b9c9-cb60ef356158)
@@ -102,15 +103,15 @@ It has 3 properties:
 
 ### `.then` method and functionality to call on completion
 * Any code we want to run on the returned data must also be saved on the promise object.
-* Added using `.then` method to the hidden property ‘`onFulfilment`’.
-* Promise objects will automatically trigger the attached function to run (with its input being the returned data.
+* Added using `.then` method to the hidden property `‘onFulfilment`.
+* Promise objects will automatically trigger the attached function to run with its input being the returned data.
 
 
 - .then(resolve , reject )
    - resolve : method is called whenever a promise is resolved It takes data from the resolved promise.
    - reject :  method is called whenever a promise is reject It takes data from the reject promise. 
 - When the timer expires, the callback function that was passed in the setTimeout() is placed to the callback queue (This is where your asynchronous code gets pushed to, and waits for the execution).
-- The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue )
+- The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue)
 
 
 
@@ -142,7 +143,7 @@ We have three things to organize the execution:
  
  
 ### Promises review:
-The promise object give us this amazing feature, that means if we get an error back - not the actual response object we want. It's not even gonna auto trigger any of your functions in `onfulfilled`, it's gonna trigger any functions that you stored in `onRejection`.
+The promise object give us this amazing feature, that means if we get an error back - not the actual response object we want. It's not even gonna auto trigger any of your functions in `onFulfilment`, it's gonna trigger any functions that you stored in `onRejection`.
 
 how do we get functions in `onRejection`?
 there's two ways:
