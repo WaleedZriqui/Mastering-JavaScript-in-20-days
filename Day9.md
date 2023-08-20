@@ -97,6 +97,7 @@ It has 3 properties:
 2. `onRjection` which is an `empty array` - it's a hidden property.
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f36c527a-42b4-4329-b9c9-cb60ef356158)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/52967005-decf-434f-834b-8bc6fd7db4ef)
 
 
 ### `.then` method and functionality to call on completion
