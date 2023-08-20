@@ -68,33 +68,95 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 4. Functions that need to be asynchronously executed, are pushed onto the callback queue .
 5. When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
 
+
 ### Promises 
 
-- A Promise is a JavaScript object that links producing ( takes some time ) code and consuming code (wait for a result).
-- then(resolve , reject )
+* Special objects built into JavaScript that get returned immediately when we make a call to a web browser API/feature (e.g. fetch) that’s set up to return promises (not all are).
+* A Promise is a JavaScript object that links producing ( takes some time ) code and consuming code (wait for a result).
+* Promises act as a placeholder for the data we expect to get back from the web browser feature’s background work.
+* Promises object has two propoties (value, onfolyfilled) 
+* Promises are excuted like the same way we did for 'setTimeOut()' above 
+
+```javaScript
+function display(data){
+    console.log(data)
+}
+const futureData = fetch('https://twitter.com/will/tweets/1')
+futureData.then(display); 
+ 
+console.log("Me first!");
+```
+
+
+
+A `promise object`, it's just an object *automatically created* in JavaScript by `fetch`.
+
+It has 3 properties:
+1. `Value` which is `undefined`.
+2. `onFulfilled` which is an `empty array` - it's a hidden property.
+2. `onRjection` which is an `empty array` - it's a hidden property.
+
+
+
+![Screenshot (228)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/6f4dc35f-fe42-4b2d-8cd7-99d63290901a)
+
+
+![Screenshot (240)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/23e9d544-0877-4b14-88fa-f625683555b4)
+
+
+### `.then` method and functionality to call on completion
+* Any code we want to run on the returned data must also be saved on the promise object.
+* Added using `.then` method to the hidden property ‘`onFulfilment`’.
+* Promise objects will automatically trigger the attached function to run (with its input being the returned data.
+
+
+- .then(resolve , reject )
    - resolve : method is called whenever a promise is resolved It takes data from the resolved promise.
-   - reject :  method is called whenever a promise is reject It takes data from the reject promise.
-   - 
+   - reject :  method is called whenever a promise is reject It takes data from the reject promise. 
 - When the timer expires, the callback function that was passed in the setTimeout() is placed to the callback queue (This is where your asynchronous code gets pushed to, and waits for the execution).
 - The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue )
 
 
-## Coding Examples
 
-```javascript
-// Example 1: setTimeout
-function print(){
-  console.log("After 0ms ");
-}
-setTimeout(print,0);
-console.log("First");
+### Web APIs & Promises Example:
 
-/*
-First 
-After 0ms 
-*/
+```javaScript
+function display(data){console.log(data)}
+function printHello(){console.log("Hello");}
+function blockFor300ms(){/* blocks js thread for 300ms*/ }
+
+setTimeout(printHello, 0);
+
+const futureData = fetch('https://twitter.com/will/tweets/1');
+futureData.then(display);
+
+blockFor300ms();
+console.log("Me first!");
 ```
 
+
+![Screenshot (253)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/0dc56074-37c5-448e-b82d-4522871faeed)
+
+###  Order of execution: 
+We have three things to organize the execution:
+
+1. **call stack**.
+2. **microtask queue**.
+3. **callback queue**.
+ 
+ 
+### Promises review:
+The promise object give us this amazing feature, that means if we get an error back - not the actual response object we want. It's not even gonna auto trigger any of your functions in `onfulfilled`, it's gonna trigger any functions that you stored in `onRejection`.
+
+how do we get functions in `onRejection`?
+there's two ways:
+* Using `catch`: `futureData.catch(errfun)` >>> any function we pass in there, it's going `onRejection`.
+* Using `.then`: `futureData.then(fun,errfun)` >>> the second argument fun is going to `onRejection`.
+
+> ### 💡Note:                        
+> Any function i declear it as async, when I want to call it I should use .then() .catch() or use async/await.
+
+## Coding Examples
 ```javascript
 // Example 2: promises
 let prom1 = new Promise((resolve, reject)=>{
@@ -109,7 +171,6 @@ let prom1 = new Promise((resolve, reject)=>{
 	reject("Error");
 })
 .then(e=>{console.log(e)}).catch(e=>{console.log(e)});//Error 
-
 ```
 
 
@@ -160,5 +221,4 @@ let result={name:api.apiName , URL:api.apiUrl}
 })
 }
 executeInParallelWithPromises(apis);
-
 ```
