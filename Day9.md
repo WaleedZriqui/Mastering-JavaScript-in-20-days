@@ -59,13 +59,16 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4896591b-28dd-4291-a3e7-52c18180b8f0)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/63bd7449-1407-4319-b439-8dd9a8c81fd7)
 
+> We look to the Queue when the stack is empty (Queu is for asynchronous) and it's the definition of **Event Loop**
 
+#### Notes: 
+1. JavaScript engin part of web browser.
+2. JavaScript doesn't have the feature of a timer the browser provides the timer feature which JavaScript takes advantage of by using setTimeOut.
+3. Some Javascript features are actually Browser APIs e.g (document , setTimeout , console , fetch ).
+4. Functions that need to be asynchronously executed, are pushed onto the callback queue .
+5. When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
 
-- JavaScript engin part of web browser.
-- JavaScript doesn't have the feature of a timer the browser provides the timer feature which JavaScript takes advantage of by using setTimeOut.
-- Some Javascript features are actually Browser APIs e.g (document , setTimeout , console , fetch ).
-- Functions that need to be asynchronously executed, are pushed onto the callback queue .
-- When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
+### Promises 
 
 - A Promise is a JavaScript object that links producing ( takes some time ) code and consuming code (wait for a result).
 - then(resolve , reject )
