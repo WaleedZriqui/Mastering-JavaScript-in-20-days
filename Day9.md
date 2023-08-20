@@ -96,12 +96,7 @@ It has 3 properties:
 2. `onFulfilled` which is an `empty array` - it's a hidden property.
 2. `onRjection` which is an `empty array` - it's a hidden property.
 
-
-
-![Screenshot (228)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/6f4dc35f-fe42-4b2d-8cd7-99d63290901a)
-
-
-![Screenshot (240)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/23e9d544-0877-4b14-88fa-f625683555b4)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f36c527a-42b4-4329-b9c9-cb60ef356158)
 
 
 ### `.then` method and functionality to call on completion
