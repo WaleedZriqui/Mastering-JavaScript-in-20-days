@@ -49,6 +49,13 @@ Hello (without dellay)
 - Asynchronous programming in JavaScript handle tasks that may take some time to complete, such as fetching data from a server or reading a file. There are several ways to achieve asynchronous programming in JS callback functions, promises, and the newer async/await syntax.
 
 
+We have rules for the execution of our asynchronously delayed code Hold promise-deferred functions in a microtask queue and callback function in a task queue (Callback queue) when the Web Browser Feature (API) finishes add the function to the Call stack (i.e. run the function) when:
+- Call stack is empty & all global code run (Have the Event Loop check this condition)
+- Prioritize functions in the microtask queue over the Callback queue
+- Call stack
+A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
+
+
 
 
 - JavaScript engin part of web browser.
