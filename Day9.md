@@ -67,6 +67,7 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 3. Some Javascript features are actually Browser APIs e.g (document , setTimeout , console , fetch ).
 4. Functions that need to be asynchronously executed, are pushed onto the callback queue .
 5. When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
+6. The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue)
 
 
 ### Promises 
@@ -88,8 +89,6 @@ futureData.then(display);
 console.log("Me first!");
 ```
 
-
-
 A `promise object`, it's just an object *automatically created* in JavaScript by `fetch`.
 
 It has 3 properties:
@@ -101,22 +100,13 @@ It has 3 properties:
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/52967005-decf-434f-834b-8bc6fd7db4ef)
 
 
-### `.then` method and functionality to call on completion
+#### `.then` method and functionality to call on completion
 * Any code we want to run on the returned data must also be saved on the promise object.
 * Added using `.then` method to the hidden property `‘onFulfilment`.
 * Promise objects will automatically trigger the attached function to run with its input being the returned data.
 
 
-- .then(resolve , reject )
-   - resolve : method is called whenever a promise is resolved It takes data from the resolved promise.
-   - reject :  method is called whenever a promise is reject It takes data from the reject promise. 
-- When the timer expires, the callback function that was passed in the setTimeout() is placed to the callback queue (This is where your asynchronous code gets pushed to, and waits for the execution).
-- The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue)
-
-
-
-### Web APIs & Promises Example:
-
+#### Web APIs & Promises Example:
 ```javaScript
 function display(data){console.log(data)}
 function printHello(){console.log("Hello");}
@@ -131,18 +121,16 @@ blockFor300ms();
 console.log("Me first!");
 ```
 
-
 ![Screenshot (253)](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/0dc56074-37c5-448e-b82d-4522871faeed)
 
-###  Order of execution: 
+####  Order of execution: 
 We have three things to organize the execution:
-
 1. **call stack**.
 2. **microtask queue**.
 3. **callback queue**.
  
  
-### Promises review:
+#### Promises review:
 The promise object give us this amazing feature, that means if we get an error back - not the actual response object we want. It's not even gonna auto trigger any of your functions in `onFulfilment`, it's gonna trigger any functions that you stored in `onRejection`.
 
 how do we get functions in `onRejection`?
@@ -150,8 +138,9 @@ there's two ways:
 * Using `catch`: `futureData.catch(errfun)` >>> any function we pass in there, it's going `onRejection`.
 * Using `.then`: `futureData.then(fun,errfun)` >>> the second argument fun is going to `onRejection`.
 
-> ### 💡Note:                        
+#### Note: 💡                       
 > Any function i declear it as async, when I want to call it I should use .then() .catch() or use async/await.
+
 
 ## Coding Examples
 ```javascript
