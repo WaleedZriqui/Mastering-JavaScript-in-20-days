@@ -36,6 +36,8 @@ Hello (without dellay)
 */ 
 ```
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/38052a44-506f-40e8-b94f-ea7763069cc5)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/63bd7449-1407-4319-b439-8dd9a8c81fd7)
+
 
 => So JavaScript is not enough - We need new pieces (some of which aren’t JavaScript at all)
 
