@@ -65,9 +65,6 @@ A call stack is a mechanism for an interpreter (like the JavaScript interpreter 
 1. JavaScript engin part of web browser.
 2. JavaScript doesn't have the feature of a timer the browser provides the timer feature which JavaScript takes advantage of by using setTimeOut.
 3. Some Javascript features are actually Browser APIs e.g (document , setTimeout , console , fetch ).
-4. Functions that need to be asynchronously executed, are pushed onto the callback queue .
-5. When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
-6. The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue)
 
 
 ### Promises 
@@ -105,6 +102,11 @@ It has 3 properties:
 * Added using `.then` method to the hidden property `‘onFulfilment`.
 * Promise objects will automatically trigger the attached function to run with its input being the returned data.
 
+#### Notes:
+1. Functions that need to be asynchronously executed, are pushed onto the callback queue .
+2. When the callstack is empty, the functions in the callback ( keep track of multiple function calls) queue are execute (when the event loop finds an empty call stack).
+3. The callback function passed to the then() method is added to the microstack queue and when all global code is finished running and there's nothing on the callstack the event loop goes and checks the queues (first the microstack queue then callback queue)
+
 
 #### Web APIs & Promises Example:
 ```javaScript
@@ -126,7 +128,7 @@ console.log("Me first!");
 ####  Order of execution: 
 We have three things to organize the execution:
 1. **call stack**.
-2. **microtask queue**.
+2. **microtask queue**. so if we have a function on it and one on callback queue then this one here will get the priority
 3. **callback queue**.
  
  
