@@ -55,6 +55,7 @@ We have rules for the execution of our asynchronously delayed code Hold promise-
 - Call stack
 A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
 
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4896591b-28dd-4291-a3e7-52c18180b8f0)
 
 
 
