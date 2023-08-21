@@ -128,7 +128,7 @@ console.log("Me first!");
 ####  Order of execution: 
 We have three things to organize the execution:
 1. **call stack**.
-2. **microtask queue**. so if we have a function on it and one on callback queue then this one here will get the priority
+2. **microtask queue**. so if we have a function on it and one on callback queue then this one here will get the prior ity
 3. **callback queue**.
  
  
@@ -144,36 +144,55 @@ there's two ways:
 > Any function i declear it as async, when I want to call it I should use .then() .catch() or use async/await.
 
 
-## Coding Examples
-```javascript
-// Example 2: promises
-let prom1 = new Promise((resolve, reject)=>{
-	resolve("Success");
-})
-.then(e=>{console.log(e)})//Success
-```
-
-```javascript
-// Example 3: promises
-let prom1 = new Promise((resolve, reject)=>{
-	reject("Error");
-})
-.then(e=>{console.log(e)}).catch(e=>{console.log(e)});//Error 
-```
-
-
 ## Coding Exercise and my Solution:
 
-### [Exercises for Async JS & Promises](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
-
-#### My Solution : Q1
+### [Question 1:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
 ```javascript
+const task1 = (cb) => setTimeout(() => {
+  const message = "Task 1 has executed successfully!";
+  cb(message);
+}, 3000)
 
+const task2 = (cb) => setTimeout(() => {
+  const message = "Task 2 has executed successfully!";
+  cb(message);
+}, 0)
 
+const task3 = (cb) => setTimeout(() => {
+  const message = "Task 3 has executed successfully!";
+  cb(message);
+}, 1000)
+
+const task4 = (cb) => setTimeout(() => {
+  const message = "Task 4 has executed successfully!";
+  cb(message);
+}, 2000)
+
+const task5 = (cb) => setTimeout(() => {
+  const message = "Task 5 has executed successfully!";
+  cb(message);
+}, 4000)
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = (tasks, callback) => {
+    for (let i of tasks)
+        i(callback)
+}
+
+let waleArr =[]
+const storeValue = (message) => {
+    waleArr.push(message)
+}
+
+executeInSequenceWithCBs(asyncTasks, storeValue)
+console.log(waleArr)
 ```
 
-#### My Solution : Q2
+### [Question 2:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
 ```javascript
+
+// This solution is not fully correct, i need to back to it again 
 const apis = [
   {
     apiName: "products", 
@@ -192,21 +211,16 @@ const apis = [
     apiUrl: "https://dummyjson.com/comments",
   }
 ]
-const  display =function(data){
- console.log(data);
 
+const executeInParallelWithPromises = async(apis) => {
+    for(let i of apis){
+        let FutureData= await fetch(i.apiUrl);
+        let result={name:api.apiName , URL:api.apiUrl}
+        FutureData = await FutureData.json()
+        console.log(FutureData)
+    }
 }
-
-function doWork(result, data) {
-result.data=data;
-  console.log(result);
-}
-const executeInParallelWithPromises = (apis) => {
-apis.forEach((api)=>{
- const FutureData=fetch(api.apiUrl);
-let result={name:api.apiName , URL:api.apiUrl}
- FutureData.then(data => data.json()).then(doWork.bind(null, result));
-})
-}
-executeInParallelWithPromises(apis);
+await executeInParallelWithPromises(apis);
 ```
+
+### [Question 3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
