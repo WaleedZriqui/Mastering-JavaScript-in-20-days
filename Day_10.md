@@ -54,8 +54,6 @@ Every Object in JavaScript has a prototype, we need that prototype to keep track
 When a property or method of an object is accessed in JavaScript, the language first looks for that property or method in the object itself. If it is not found, it looks for it in the object's prototype, and keeps looking up the prototype chain until the property or method is found or the end of the chain is reached. 
 
 Prototype chaining allows objects to inherit properties and methods from other objects.
-![image](https://github.com/AnwarMelhem/Mastering_JavaScript_in_20_Days/assets/97465642/d3e08c6a-1ab7-456d-8c80-8b2f366d99ed)
-
 
 ## Object.prototype.hasOwnProperty()
 The hasOwnProperty() method of Object instances returns a boolean indicating whether this object has the specified property as its own property (as opposed to inheriting it).
