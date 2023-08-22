@@ -134,7 +134,7 @@ user1.increment();
 ```
 So here unlike the regular function, the arrow function will go to the parent and used value for 'this' and in this case it's "user1"
 
-### New Keyowrd
+#### Solution 3 - Introducing the keyword that automates the hard work: new
 All the hard work doing above can be replaced by 'new' keyword  
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/afc45ffb-4080-44c5-837e-e6ff4e1fa8d7)
 
