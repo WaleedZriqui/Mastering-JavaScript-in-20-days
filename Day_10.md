@@ -138,6 +138,11 @@ So here unlike the regular function, the arrow function will go to the parent an
 All the hard work doing above can be replaced by 'new' keyword  
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/afc45ffb-4080-44c5-837e-e6ff4e1fa8d7)
 
+When we call the function that returns an object with new in front we automate 2
+things
+1. Create a new user object
+2. Return the new user object
+
 
 ## Coding Exercise and my Solution:
 
