@@ -143,7 +143,7 @@ things
 1. Create a new user object
 2. Return the new user object
 
-![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f3b44e9e-6f4c-41a6-a55c-814b1f20bdae)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/fda6cfcb-3434-45f3-b626-44194a44467d)
 
 
 ## Coding Exercise and my Solution:
