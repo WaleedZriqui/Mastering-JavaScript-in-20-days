@@ -145,6 +145,17 @@ things
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/fda6cfcb-3434-45f3-b626-44194a44467d)
 
+```javascript
+function userCreator (name, score) {
+    this.name = name;
+    this.score = score;
+};
+userCreator.protoype.increment: function(){this.score++;},
+userCreator.protoype.login: function(){console.log("Logged in");}
+
+const user1 = userCreator("Eva", 9);
+user1.increment();
+```
 
 ## Coding Exercise and my Solution:
 
