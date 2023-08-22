@@ -156,6 +156,8 @@ userCreator.protoype.login: function(){console.log("Logged in");}
 const user1 = userCreator("Eva", 9);
 user1.increment();
 ```
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d6c2a76d-7265-48ce-a24c-27b9b6eb3dd1)
+
 
 ## Coding Exercise and my Solution:
 
