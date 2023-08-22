@@ -69,6 +69,7 @@ const user2 = userCreator("Tim", 5);
 user1.increment()
 ```
 * Here const a = Object.create(otherObject), a will get a link to the otherObject. So if we don't find a property in a then it will also go to other function. And that happening by define a '__proto__' inside the object a will link to the other object  
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d6ed45af-6037-4f71-9c85-7b353b1f6795)
 
 
 #### In JavaScript we can create an object in one of four ways: 
