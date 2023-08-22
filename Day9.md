@@ -222,5 +222,3 @@ const executeInParallelWithPromises = async(apis) => {
 }
 await executeInParallelWithPromises(apis);
 ```
-
-### [Question 3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%203/tasks.md)
