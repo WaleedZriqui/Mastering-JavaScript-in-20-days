@@ -159,6 +159,25 @@ user1.increment();
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d6c2a76d-7265-48ce-a24c-27b9b6eb3dd1)
 
 
+#### Solution 4: The class ‘syntactic sugar’
+In the solituon 3 we are writing our shared methods separately from our object ‘constructor’ itself (off in the userCreator.prototype object)
+Other languages let us do this all in one place. ES2015 lets us do so too by using class keyword and constructor 
+
+```javascript
+class UserCreator {
+    constructor (name, score){ 
+        this.name = name;
+        this.score = score;
+    }
+    increment: function(){this.score++;},
+    login: function(){console.log("Logged in");}
+}
+const user1 = userCreator("Eva", 9);
+user1.increment();
+```
+Nothing in excution will change ^-^. Class is a function object, function -> constroctor, protoztypes will stay as them 
+
+
 ## Coding Exercise and my Solution:
 
 ### [Coding Exercises](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%204/task.md)
