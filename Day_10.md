@@ -36,6 +36,41 @@ user3.increment = function() {
 ```
 > Our code is getting repetitive, we're breaking our DRY principle
 
+#### Solution 1. Generate objects using a function
+```javascript
+function userCreator(name, score) {
+ const newUser = {};
+ newUser.name = name;
+ newUser.score = score;
+ newUser.increment = function() {
+ newUser.score++;
+ };
+ return newUser;
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment()
+```
+* **Problems**: Each time we create a new user we make space in our computer's memory for all our data and functions. But our functions are just copies (i.e. lets consider that the above function is 100 rows of code, then i will waste memory and space)
+
+#### Solution 2: Using the prototype chain
+```javascript
+function userCreator(name, score) {
+ const newUser = {};
+ newUser.name = name;
+ newUser.score = score;
+ newUser.increment = function() {
+ newUser.score++;
+ };
+ return newUser;
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment()
+```
+* Here const a = Object.create(otherObject), a will get a link to the otherObject. So if we don't find a property in a then it will also go to other function. And that happening by define a '__proto__' inside the object a will link to the other object  
+
+
 #### In JavaScript we can create an object in one of four ways: 
 1- Object literal notation
 2- Using the new Object() constructor
