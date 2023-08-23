@@ -59,7 +59,7 @@ let y = "2";
 2. function & arrays are not types of the top level they are subtypes of object, but when using `typeof array` = *object* while `typeof function` = *function*.
 3. `typeof null` = *objec*t >>> it is a *bug* in JS.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/10221cd2-1fde-436b-a834-d22b3ea82950)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/5d8eae1b-9ed0-46b2-94a7-5ca2aeeb93e6)
 
 #### BigInt: 
 var n = 42n 
