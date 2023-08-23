@@ -77,7 +77,7 @@ typeof(v) // bigint
 - *Type of Nan*: NaN type is number (***invalid number***), becuase it cmoes from numeric operations
 - isNan is a method that return if it's not number is a NAN or not 
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/de47f3d2-6cdf-4185-b03d-87298947f10d)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/3dc4b353-d45e-46b7-9ef4-eba4e7818bd9)
 
 
 the isNaN utility coerces values to numbers before it checks for them to be NaN. So, it's gonna coerce the string `my son's age` to a number and guess what number it's gonna coerce it to? The NaN value, so of course it's gonna back true.
@@ -86,17 +86,17 @@ the isNaN utility coerces values to numbers before it checks for them to be NaN.
 
 ### Negative Zero (another special value):
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/e38c8178-4a82-4b9f-8b2c-1ce087665b1c)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/876b8f26-5b4e-46ca-b2e1-3b541bdf2bf3)
 
 > Also (===) will fail in equality for -0 as NAN 
 > `Object.is( , )` : it’s built-in checker, better way for checking equality (better than ===).
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/30133e50-283f-41b3-b4f7-567a868f5f21)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/fa6f9a7d-7ae5-4f0c-ade7-810c1a58e538)
 
 
 We might use -0 for directons in some applecaions which the sign means direction.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/155b7443-5484-490c-9e2d-4a4b08d1c33d)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/29a7ce1d-d663-4c81-a5ee-5a11d92de855)
 
 
 
@@ -133,7 +133,7 @@ if (!Object.is || true){   // to disaple the built in method & build my own
 - aka: Built-In Objects.
 - aka: Native Functions.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/55a7346a-127e-4de8-9365-8c23295226ee)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/98d6d3c4-2a21-4fcf-bdcf-5d5a8fd21ca6)
 
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/b75233bf-b584-4923-bb6e-5b6296f5c6d1)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7069c94e-980e-460e-9bf2-bfca446e6886)
