@@ -113,8 +113,8 @@ This is True:
 - `==` allows coercion (when types are different).
 - `===` disallows coercion (when types are the same).
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/e233fecb-f678-4ccb-b3d4-df761da59445)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/5839b884-6e81-4ebd-af9d-b63965b5daf3)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/79b9aba4-7ad2-4f41-8cfd-d60a641e6b0a)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b9f7ac84-759e-4a5d-8dee-5d22e74428fd)
 
 
 ### Coercive Equality
