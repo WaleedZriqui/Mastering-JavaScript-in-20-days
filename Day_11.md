@@ -160,7 +160,7 @@ It takes any value and gives us the representation of that value in string form.
 ##### For the Object: we can override the toString() to return what we need as shown below. The useful thing here is JSON.strigfay()
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/882a3709-04dd-4d84-9964-bfa0a6500f04)
 
-###  ToNumber: we can do it by `Number(x)` 
+####  ToNumber: we can do it by `Number(x)` 
 Anytime we need to do something numeric and we don't have a number, we're gonna invoke the ToNumber abstract operation
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/efc5151f-bf16-460e-a15b-61f5b3e04c7c)
 
@@ -178,8 +178,8 @@ Anytime we need to do something numeric and we don't have a number, we're gonna 
 1 > 1 // false !!!!
 ```
 
-### ToBoolean
-
+#### ToBoolean
+Anytime you have any value that is not a Boolean, and it's used in a place that needs a Boolean, this operation occurs. Exactly the same as the other ones
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d91624d4-ad76-4fba-9230-513687929eab)
 
 ### Cases of coercion: 
