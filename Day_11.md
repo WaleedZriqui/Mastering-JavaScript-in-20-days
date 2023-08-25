@@ -174,7 +174,7 @@ Anytime we need to do something numeric and we don't have a number, we're gonna 
 #### ToBoolean: we can do it by `Boolean(x)` and return if the value is `Falsy` or `Truthy`
 Anytime you have any value that is not a Boolean, and it's used in a place that needs a Boolean, this operation occurs. Exactly the same as the other ones
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d91624d4-ad76-4fba-9230-513687929eab)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4a8f3a7f-9439-4d99-aeb4-1a9dc53b8ac4)
 
 
 ### Cases of coercion: 
