@@ -206,6 +206,7 @@ Anytime you have any value that is not a Boolean, and it's used in a place that 
 
 ### Boxing
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e25892db-4722-41cd-a786-b8796a1f25b6)
+
 Remember, you access a length on a primitive string or some method on a primitive number, for example. So how does that work?
 Boxing is a form of implicit coercion what helpful and go ahead and make the not an object to become an object to access all properties and methods on them (i.e. JavaScript implicitly coerces these primitives into their object)
 
