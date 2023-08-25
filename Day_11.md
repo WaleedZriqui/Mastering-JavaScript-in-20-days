@@ -216,4 +216,4 @@ Anytime we need to do something numeric and we don't have a number, we're gonna 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/bef92dac-d976-4eff-99ce-b9f0babbe701)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/65aa3b55-1ad4-4855-912c-ede7167623dc)
 
-# GSG Challenges🔥:
+## Coding Exercise and my Solution:
