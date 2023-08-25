@@ -180,6 +180,7 @@ Anytime you have any value that is not a Boolean, and it's used in a place that 
 ### Cases of coercion: 
 
 -> String Cases
+
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8b33d69e-2d0c-4f48-a349-a9b15f226d8d)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/72831d46-600e-4b88-891f-095a6a268090)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/ffac7c01-4860-452d-9efa-e925c84df6f3)
@@ -189,12 +190,14 @@ Anytime you have any value that is not a Boolean, and it's used in a place that 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2e67ade4-b5f5-4961-ba83-5d4381828435)
 
 -> Number Cases
+
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8c415e02-09c7-4bd4-8fec-d248322e314e)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e064521d-cc8b-4c74-8b18-922ee83e572f)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/839091e4-77b2-46b8-8eb1-9c0299b145e2)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b319949d-0582-46d7-83f1-0f64d5272306)
 
 -> Boolean Cases
+
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e4215841-dcad-4eda-8e76-b06f9499576e)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8a8a8781-6a51-4681-b27d-9497a3602260)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7178302c-9f59-42fe-841b-e4c4efd20500)
