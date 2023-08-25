@@ -179,29 +179,33 @@ Anytime you have any value that is not a Boolean, and it's used in a place that 
 
 ### Cases of coercion: 
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/17213722-24fd-4933-add1-e454dd3e4765)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/c0fb2a56-7464-4785-bdb7-ca2e9c5fd611)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/196a9e16-08f6-4a46-a897-da9c078f4597)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/52d93af2-9c23-48ce-ae2b-3f3d071f40f3)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/93fbb8c2-482f-40ad-87d3-43727e566845)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/10595f00-3e95-471d-b102-a5df42b85d5a)
+-> String Cases
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8b33d69e-2d0c-4f48-a349-a9b15f226d8d)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/72831d46-600e-4b88-891f-095a6a268090)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/ffac7c01-4860-452d-9efa-e925c84df6f3)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/5153d1eb-4fab-47c7-9033-61195260e85c)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e7c0df66-aaf0-4fd5-a755-1e838d64ab9b)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4b76b170-eda8-4f68-bb46-a26afe1419cb)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2e67ade4-b5f5-4961-ba83-5d4381828435)
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/b2e0773f-9a2b-4108-a1be-8106cd800d19)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/de9aa565-75d4-4942-bb7d-f6febb791117)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/331a095c-c22f-453d-9271-678565d6e88d)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/679df739-12f9-489c-901a-da526da837f4)
+-> Number Cases
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8c415e02-09c7-4bd4-8fec-d248322e314e)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e064521d-cc8b-4c74-8b18-922ee83e572f)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/839091e4-77b2-46b8-8eb1-9c0299b145e2)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b319949d-0582-46d7-83f1-0f64d5272306)
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d5095b2e-8f60-44d7-87e7-a4bc22f74290)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/5173c329-0884-4b6b-b033-88ce7edd417f)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/f98710f4-35f2-4c2c-99aa-c78780127188)
-
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/946068e6-18aa-4f08-8748-fe602ca6d86d)
+-> Boolean Cases
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e4215841-dcad-4eda-8e76-b06f9499576e)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/8a8a8781-6a51-4681-b27d-9497a3602260)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7178302c-9f59-42fe-841b-e4c4efd20500)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2dbe7b2a-18a3-4539-896d-7561fdd0c10f)
 
 
 ### Boxing
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ab07c0e4-3d44-4abb-8bc0-07f631f67c2b)
 
 ### Conversion Corner Cases
+It's ok to use boolean corresion with undefined and null but not ok with number and objects since there are many edge and corner cases 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/499ad77e-d128-4015-a797-99bea1c67e74)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/bef92dac-d976-4eff-99ce-b9f0babbe701)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/65aa3b55-1ad4-4855-912c-ede7167623dc)
