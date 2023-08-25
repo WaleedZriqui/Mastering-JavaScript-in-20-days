@@ -166,17 +166,12 @@ Anytime we need to do something numeric and we don't have a number, we're gonna 
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2b38f8ae-1bb7-421d-a2de-7c9b7d5d401c)
 
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/94a8b349-baf5-4c20-ab57-ccc7faf92760)
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ad14513d-111b-4a96-b022-a7591a67cac2)
-
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/60704801-1ff6-4cd0-a856-293a66457194)
-
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/442a3ae5-31df-4517-b4e9-236c3b990ded)
-
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/06301a68-99ac-4c9a-acd0-9a0c639c85f3)
 
 
 #### Why true & false shouldn’t convert to 1&0 
-
 ```javaScript
 3 > 2 > 1
 (true) > 1
