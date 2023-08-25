@@ -7,22 +7,15 @@ This README file summarizes the Philosophy of Coercion, Equality, and Static Typ
 ### Philosophy of Coercion
 > JavaScript's dynamic typing isnot a weakness, it's one of itsstrong qualities
 
-#### **Exercise:**
-
-**Working With Coercion**
-
-In this exercise, you will define some validation functions that check user inputs (such as from DOM elements). You'll need to properly handle the coercions of the various value types.
-
-**Instructions**
+#### Exercise: Working With Coercion
+In this exercise, you will define some validation functions that check user inputs (such as from DOM elements). You'll need to properly handle the coercions of the various value types. With these Instructions:
 
 1. Define an `isValidName(..)` validator that takes one parameter, `name`. The validator returns `true` if all the following match the parameter (`false` otherwise):
-
 	- must be a string
 	- must be non-empty
 	- must contain non-whitespace of at least 3 characters
 
 2. Define an `hoursAttended(..)` validator that takes two parameters, `attended` and `length`. The validator returns `true` if all the following match the two parameters (`false` otherwise):
-
 	- either parameter may only be a string or number
 	- both parameters should be treated as numbers
 	- both numbers must be 0 or higher
@@ -110,19 +103,15 @@ console.log(hoursAttended("6.1","10.1") === false);
 
 
 
-### Equality  == vs. ===
+### Equality  == Vs. ===
 
-This is ***NOT*** true ❌:
+This is NOT true:
+- `==` checks value (loose).
+- `===` checks value and type (strict).
 
-`==` checks value (loose).
-
-`===` checks value and type (strict).
-
-This is ***True*** ✅:
-
-`==` allows coercion (when types are different).
-
-`===` disallows coercion (when types are the same).
+This is True:
+- `==` allows coercion (when types are different).
+- `===` disallows coercion (when types are the same).
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/3317abc5-aad5-4992-bc4b-8a76e7e3fc67)
 
