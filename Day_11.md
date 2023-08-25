@@ -213,8 +213,8 @@ Boxing is a form of implicit coercion what helpful and go ahead and make the not
 
 ### Conversion Corner Cases
 It's ok to use boolean corresion with undefined and null but not ok with number and objects since there are many edge and corner cases 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/499ad77e-d128-4015-a797-99bea1c67e74)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/bef92dac-d976-4eff-99ce-b9f0babbe701)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/65aa3b55-1ad4-4855-912c-ede7167623dc)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/e752808f-5cc1-498b-ad2b-2124d94ddb4b)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d5ff9183-2c78-44ab-a622-3ae87a52fe80)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7f115108-03da-4295-906c-29fd14dfb372)
 
 ## Coding Exercise and my Solution:
