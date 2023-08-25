@@ -164,7 +164,7 @@ It takes any value and gives us the representation of that value in string form.
 Anytime we need to do something numeric and we don't have a number, we're gonna invoke the ToNumber abstract operation
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/efc5151f-bf16-460e-a15b-61f5b3e04c7c)
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/4488180c-4443-4ae8-abff-0326eda6bcba)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2b38f8ae-1bb7-421d-a2de-7c9b7d5d401c)
 
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ad14513d-111b-4a96-b022-a7591a67cac2)
