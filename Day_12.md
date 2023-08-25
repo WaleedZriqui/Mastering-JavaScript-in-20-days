@@ -2,9 +2,12 @@
 
 This README file summarizes the Philosophy of Coercion, Equality, and Static Typing 
 
-## Philosophy of Coercion
+## Lesson Summary
 
-### **Exercise:**
+### Philosophy of Coercion
+> JavaScript's dynamic typing isnot a weakness, it's one of itsstrong qualities
+
+#### **Exercise:**
 
 **Working With Coercion**
 
@@ -103,12 +106,11 @@ console.log(hoursAttended(6.1,10) === false);
 console.log(hoursAttended(6,"10.1") === false);
 console.log(hoursAttended("6.1",10) === false);
 console.log(hoursAttended("6.1","10.1") === false);
-
 ```
 
 
 
-## Equality  == vs. ===
+### Equality  == vs. ===
 
 This is ***NOT*** true ❌:
 
