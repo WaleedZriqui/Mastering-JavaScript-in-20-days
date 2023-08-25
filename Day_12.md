@@ -335,21 +335,13 @@ function setsMatch(arr1,arr2) {
 * They focus more on "static types" (variables, parameters, returns, properties, etc) than value types.
 * The only way to have confidence over the runtime behavior is to limit/eliminate dynamic typing.
 
-# GSG Challenges🔥:
 
 
-### QUESTION #1
+## Coding Exercise and my Solution:
 
-Given the following `promisesArray`, convert the array into an object using the
-`convertToObj` function.
-
-You should apply typescript types to every promise, the input of `convertToObj`,
-and the output of `convertToObj`. 
-
-Build interfaces and types as needed.
+### [QUESTION #1](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
 
 ```javascript
-
 const sayHelloWorld = new Promise(resolve, reject => {
   resolve("Hello world!");
 });
@@ -375,15 +367,9 @@ const convertToObj = (array) => {
   //write your code here;
   return obj;
 }
-
 ```
 
--------------------------------------------------------------------
-
-### QUESTION #2:
-
-What will be the output of the following code snippet? Pick the right choice
-then **justify your answer with an explanation**.
+### [QUESTION #2:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
 
 ```javascript
 function testScope1() {
@@ -407,11 +393,7 @@ B) `1`, `undefined`, `ReferenceError`
 C) `1`, `ReferenceError`, `ReferenceError`   
 D) `1`, `ReferenceError`
 
- **My Solution:**
-
-The correct choice is:
-
-**C) 1, ReferenceError, ReferenceError.**
+The correct choice is: **C**
 
 * var has function scope, which means it's accessible throughout the function in which it's defined.
 * let and const have block scope, which means they are only accessible within the block where they are defined.
@@ -425,10 +407,7 @@ Here's how the code behaves:
 3. const c = 3; is also declared within the if block with block scope. Like let, it's not accessible outside the block in which it's defined. When console.log(c); is executed outside the if block, c is out of scope, and a ReferenceError will occur, indicating that c is not defined.
 -------------------------------------------------------------------
 
-### QUESTION #3:
-
-What will be the output of the following code snippet? Pick the right choice
-then **justify your answer with an explanation**.
+### [QUESTION #3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
 
 ```javascript
 function testScope2() {
@@ -454,12 +433,7 @@ C)`undefined`, `undefined`,
 `ReferenceError`  
 D) `1`, `ReferenceError`
 
- **My Solution:**
-
-The correct choice is:
-
-**A) undefined, ReferenceError**
-
+The correct choice is: **A**
 
 1. console.log(a); is executed before the if block. Since var declarations are hoisted to the top of their containing function or global scope, the variable a is declared in the function scope and initialized to undefined at the beginning of the function. Therefore, console.log(a); will print undefined.
 
@@ -473,15 +447,10 @@ The correct choice is:
 
 6. Inside the if block, const c = 3; declares c within the block scope. Like let, this declaration is not hoisted to the top of the function. This c is also a different variable from the one used outside the if block.
 
--------------------------------------------------------------------
 
-### QUESTION #4:
-
-What will be the output of the following code snippet? Pick the right choice
-then **justify your answer with an explanation**.
+### [QUESTION #4:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
 
 ```javascript
-
 function testScope3() {
   var a = 36;
   let b = 100;
@@ -512,12 +481,7 @@ C) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1,100, 45 ]`
 D) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1, 2, 3 ]`
 
 
- **My Solution:**
-
-
-The correct choice is:
-
-**C) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1, 100, 45 ]**
+The correct choice is: **C**
 
 1. At the beginning of the testScope3 function, var a = 36;, let b = 100;, and const c = 45; declare and initialize three variables: a with var, b with let, and c with const. These variables are function-scoped and are accessible within the entire function.
 
