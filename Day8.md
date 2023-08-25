@@ -91,6 +91,7 @@ anotherFunction(); // counter = 2
 - Helper functions: Everyday professional helper functions like ‘once’ and ‘memoize’ (used to make the function running only one time and memoization data to not rerun the funcation again if we already run it and have data)
 - Asynchronous JavaScript: Callbacks and Promises rely on closure to persist state pin an asynchronous environment
 
+
 ## Coding Exercises and My solutuon
 
 ### [Question 1:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week2%20-%20javaScript-the-hard-parts-v2/day%202/tasks.md)
