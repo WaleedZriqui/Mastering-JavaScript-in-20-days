@@ -137,3 +137,83 @@ if (!Object.is || true){   // to disaple the built in method & build my own
 
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7069c94e-980e-460e-9bf2-bfca446e6886)
+
+
+### Coercion 
+aka: ***type conversion***.
+
+### Abstract Operations: **ToPrimitive**
+
+#### ToString: `.toString()`
+It takes any value and gives us the representation of that value in string form. And almost every value that you can imagine has at least some kind of representation in string form.
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/57e87169-02a3-48b0-9b45-b04ac6d1bbe4)
+
+```javaScript
+[].toString() // "" 
+[1,2,3].toString() // "1,2,3" 
+[null,undefined].toString() //"," 
+[[[],[],[]],[]].toString() //",,,"
+[,,,,].toString() // ",,,"
+```
+
+##### For the Object: we can override the toString() to return what we need as shown below. The useful thing here is JSON.strigfay()
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/53da359e-cff4-41fa-9f11-8b53224fd7c6)
+
+###  ToNumber: we can do it by `Number(x)` 
+Anytime we need to do something numeric and we don't have a number, we're gonna invoke the ToNumber abstract operation
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/2d403684-5a89-4f85-a97b-0c2763897fce)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/4488180c-4443-4ae8-abff-0326eda6bcba)
+
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ad14513d-111b-4a96-b022-a7591a67cac2)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/60704801-1ff6-4cd0-a856-293a66457194)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/442a3ae5-31df-4517-b4e9-236c3b990ded)
+
+
+
+#### Why true & false shouldn’t convert to 1&0 
+
+```javaScript
+3 > 2 > 1
+(true) > 1
+1 > 1 // false !!!!
+```
+
+### ToBoolean
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d91624d4-ad76-4fba-9230-513687929eab)
+
+### Cases of coercion: 
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/17213722-24fd-4933-add1-e454dd3e4765)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/c0fb2a56-7464-4785-bdb7-ca2e9c5fd611)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/196a9e16-08f6-4a46-a897-da9c078f4597)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/52d93af2-9c23-48ce-ae2b-3f3d071f40f3)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/93fbb8c2-482f-40ad-87d3-43727e566845)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/10595f00-3e95-471d-b102-a5df42b85d5a)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/b2e0773f-9a2b-4108-a1be-8106cd800d19)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/de9aa565-75d4-4942-bb7d-f6febb791117)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/331a095c-c22f-453d-9271-678565d6e88d)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/679df739-12f9-489c-901a-da526da837f4)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d5095b2e-8f60-44d7-87e7-a4bc22f74290)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/5173c329-0884-4b6b-b033-88ce7edd417f)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/f98710f4-35f2-4c2c-99aa-c78780127188)
+
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/946068e6-18aa-4f08-8748-fe602ca6d86d)
+
+
+### Boxing
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ab07c0e4-3d44-4abb-8bc0-07f631f67c2b)
+
+### Conversion Corner Cases
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/499ad77e-d128-4015-a797-99bea1c67e74)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/bef92dac-d976-4eff-99ce-b9f0babbe701)
+![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/65aa3b55-1ad4-4855-912c-ede7167623dc)
+
+# GSG Challenges🔥:
