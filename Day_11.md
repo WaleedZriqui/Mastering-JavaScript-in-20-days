@@ -206,6 +206,9 @@ Anytime you have any value that is not a Boolean, and it's used in a place that 
 
 ### Boxing
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/ab07c0e4-3d44-4abb-8bc0-07f631f67c2b)
+Remember, you access a length on a primitive string or some method on a primitive number, for example. So how does that work?
+Boxing is a form of implicit coercion what helpful and go ahead and make the not an object to become an object to access all properties and methods on them (i.e. JavaScript implicitly coerces these primitives into their object)
+
 
 ### Conversion Corner Cases
 It's ok to use boolean corresion with undefined and null but not ok with number and objects since there are many edge and corner cases 
