@@ -150,11 +150,11 @@ It takes any value and gives us the representation of that value in string form.
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f872ef49-4579-424b-89eb-52bf2123d3ad)
 
 ```javaScript
-[].toString() // "" 
-[1,2,3].toString() // "1,2,3" 
-[null,undefined].toString() //"," 
-[[[],[],[]],[]].toString() //",,,"
-[,,,,].toString() // ",,,"
+String([]) // "" 
+String([1,2,3]) // "1,2,3" 
+String([null,undefined]) //"," 
+String([[[],[],[]],[]]) //",,,"
+String([,,,,]) // ",,,"
 ```
 
 ##### For the Object: we can override the toString() to return what we need as shown below. The useful thing here is JSON.strigfay()
