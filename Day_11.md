@@ -147,7 +147,7 @@ aka: ***type conversion***.
 #### ToString: `.toString()`
 It takes any value and gives us the representation of that value in string form. And almost every value that you can imagine has at least some kind of representation in string form.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/57e87169-02a3-48b0-9b45-b04ac6d1bbe4)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f872ef49-4579-424b-89eb-52bf2123d3ad)
 
 ```javaScript
 [].toString() // "" 
@@ -158,11 +158,11 @@ It takes any value and gives us the representation of that value in string form.
 ```
 
 ##### For the Object: we can override the toString() to return what we need as shown below. The useful thing here is JSON.strigfay()
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/53da359e-cff4-41fa-9f11-8b53224fd7c6)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/882a3709-04dd-4d84-9964-bfa0a6500f04)
 
 ###  ToNumber: we can do it by `Number(x)` 
 Anytime we need to do something numeric and we don't have a number, we're gonna invoke the ToNumber abstract operation
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/2d403684-5a89-4f85-a97b-0c2763897fce)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/efc5151f-bf16-460e-a15b-61f5b3e04c7c)
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/4488180c-4443-4ae8-abff-0326eda6bcba)
 
