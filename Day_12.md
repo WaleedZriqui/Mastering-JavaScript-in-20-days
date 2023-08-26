@@ -159,7 +159,7 @@ We should prefer the double equals in all possible places
 * If both **types** are ***the same***, `==` is identical to `===`. Using `===` would be unnecessary, so prefer the shorter `==`.
 * If the **types** are ***different***, using one `===` would be broken. Prefer the more powerful `==` or don't compare at all.
 * If the **types** are ***different***, the equivalent of one `==` would be two (or more!) `===` (ie, "slower"). Prefer the "faster" single `==`.
-* If the **types** are ***different***, two (or more!) `===` comparisons may distract the reader Prefer the cleaner single `==`.
+* If the **types** are ***different***, two (or more!) `===` comparisons may distract the reader. Prefer the cleaner single `==`.
 
 > ***Summary***: whether the types match or not, `==` is the more sensible choice.
 
