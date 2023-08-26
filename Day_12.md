@@ -191,7 +191,7 @@ function findAll(match,arr) {
     if (Object.is(match,v)) {
       ret.push(v);
     }
-    else if (match == null && v == null) {
+    else if (match == null && v == null) { //null == undefine => true 
       ret.push(v);
     }
     else if (typeof match == "boolean") {
@@ -199,7 +199,7 @@ function findAll(match,arr) {
         ret.push(v);
       }
     }
-    else if (typeof match == "string" && match.trim() != "" && typeof v == "number" && !Object.is(-0,v)) {
+    else if (typeof match == "string" && match.trim() != "" && typeof v == "number" && !Object.is(v,-0)) {
       if (match == v) {
         ret.push(v);
       }
@@ -213,6 +213,15 @@ function findAll(match,arr) {
 	return ret;
 }
 
+function setsMatch(arr1,arr2) {
+	if (Array.isArray(arr1) && Array.isArray(arr2) && arr1.length == arr2.length) {
+		for (let v of arr1) {
+			if (!arr2.includes(v)) return false;
+		}
+		return true;
+	}
+	return false;
+}
 
 // tests:
 var myObj = { a: 2 };
@@ -251,24 +260,11 @@ console.log(setsMatch(findAll("false",values),[false]) === false);
 console.log(setsMatch(findAll(true,values),[true,"true"]) === false);
 console.log(setsMatch(findAll(true,values),[true,1]) === false);
 console.log(setsMatch(findAll(false,values),[false,0]) === false);
-
-// ***************************
-
-function setsMatch(arr1,arr2) {
-	if (Array.isArray(arr1) && Array.isArray(arr2) && arr1.length == arr2.length) {
-		for (let v of arr1) {
-			if (!arr2.includes(v)) return false;
-		}
-		return true;
-	}
-	return false;
-}
 ```
 
 ### TypeScript, Flow, and type-aware linting
 
 📌 **Benefits:**  
-
 1. Catch type-related mistakes
 2. Communicate type intent
 3. Provide IDE feedback
@@ -286,22 +282,19 @@ function setsMatch(arr1,arr2) {
 
 
 
-### 💡 Summary
-
- **[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)** 
+### Summary:
+**[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)** 
 
 
 ### TypeScript & Flow: Pros and Cons
 
 📌 **Pros:**
-
 * They make types more obvious in code.
 * Familiarity: they look like other language's type systems.
 * Extremely popular these days.
 * They're very sophisticated and good at what they do.
 
 📌 **Cons:**
-
 * They use "non-JS-standard" syntax (or code comments).
 * They require* a build process, which raises the barrier to entry.
 * Their sophistication can be intimidating to those without prior formal types experience.
@@ -313,7 +306,6 @@ function setsMatch(arr1,arr2) {
 ## Coding Exercise and my Solution:
 
 ### [QUESTION #1](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
-
 ```javascript
 const sayHelloWorld = new Promise(resolve, reject => {
   resolve("Hello world!");
@@ -343,7 +335,6 @@ const convertToObj = (array) => {
 ```
 
 ### [QUESTION #2:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
-
 ```javascript
 function testScope1() {
   if (true) {
@@ -378,10 +369,8 @@ Here's how the code behaves:
 2. let b = 2; is declared within the if block with block scope. This means it's not accessible outside the block in which it's defined. Therefore, when console.log(b); is executed outside the if block, b is out of scope, and a ReferenceError will occur, indicating that b is not defined.
 
 3. const c = 3; is also declared within the if block with block scope. Like let, it's not accessible outside the block in which it's defined. When console.log(c); is executed outside the if block, c is out of scope, and a ReferenceError will occur, indicating that c is not defined.
--------------------------------------------------------------------
 
 ### [QUESTION #3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
-
 ```javascript
 function testScope2() {
   console.log(a);
@@ -422,7 +411,6 @@ The correct choice is: **A**
 
 
 ### [QUESTION #4:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
-
 ```javascript
 function testScope3() {
   var a = 36;
