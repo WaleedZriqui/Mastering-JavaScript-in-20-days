@@ -261,6 +261,7 @@ console.log(setsMatch(findAll(true,values),[true,"true"]) === false);
 console.log(setsMatch(findAll(true,values),[true,1]) === false);
 console.log(setsMatch(findAll(false,values),[false,0]) === false);
 ```
+*********************************************************************************************************************
 
 ### TypeScript, Flow, and type-aware linting
 
