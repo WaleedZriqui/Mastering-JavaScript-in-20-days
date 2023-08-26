@@ -152,7 +152,7 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 #### The case for preferring Double Equals (==)
 We should prefer the double equals in all possible places 
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9fa053fc-48b1-421c-b922-55a17b412be0)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/3e89a14f-4fa7-401c-8287-1241b4964337)
 
 
 #### When we ***know*** the type(s) in a comparison:
