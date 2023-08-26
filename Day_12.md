@@ -161,18 +161,14 @@ We should prefer the double equals in all possible places
 * If the **types** are ***different***, the equivalent of one `==` would be two (or more!) `===` (ie, "slower"). Prefer the "faster" single `==`.
 * If the **types** are ***different***, two (or more!) `===` comparisons may distract the reader. Prefer the cleaner single `==`.
 
-> ***Summary***: whether the types match or not, `==` is the more sensible choice.
+> ***Summary***: If u know the types whether the types match or not, `==` is the more sensible choice.
 
 #### If you ***don't know*** the type(s) in a comparison:
 * The uncertainty of not knowing types should be obvious to reader The most obvious signal is `===`.
 * Not knowing the types is equivalent to assuming type conversion Because of corner cases, the only safe choice is `===`.
 
-> ***Summary***: if you can't or won't use known and obvious types, `===` is the only reasonable choice.
-
-#### **NOTEs**: 
-making types known and obvious leads to better code. 
-If types are known, `==` is best.
-Otherwise, fall back to `===`.
+> ***Summary***: If you can't or won't use known and obvious types, `===` is the only reasonable choice.
+> ***Summary***: Making types known and obvious leads to better code. If types are known, `==` is best.Otherwise, fall back to `===`.
 
 
 #### Douple Equal Exercise:
