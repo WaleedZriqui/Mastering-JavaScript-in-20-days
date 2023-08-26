@@ -284,21 +284,22 @@ console.log(setsMatch(findAll(false,values),[false,0]) === false);
 
 
 
-### Summary:
+#### Summary:
 **[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)** 
 
+In the TypeScript and flow are very useful in a lot of people are finding them to be helpful to solve their typing issues
 
-### TypeScript & Flow: Pros and Cons
+#### TypeScript & Flow: Pros and Cons
 
-📌 **Pros:**
+📌 **Pros (Advantage):**
 * They make types more obvious in code.
 * Familiarity: they look like other language's type systems.
 * Extremely popular these days.
 * They're very sophisticated and good at what they do.
 
-📌 **Cons:**
+📌 **Cons (Disadvantage):**
 * They use "non-JS-standard" syntax (or code comments).
-* They require* a build process, which raises the barrier to entry.
+* They requires a build process, which raises the barrier to entry.
 * Their sophistication can be intimidating to those without prior formal types experience.
 * They focus more on "static types" (variables, parameters, returns, properties, etc) than value types.
 * The only way to have confidence over the runtime behavior is to limit/eliminate dynamic typing.
@@ -353,11 +354,10 @@ testScope1();
 
 ```
 **Choices:**
-
-A) `undefined`, `undefined`, `undefined`   
-B) `1`, `undefined`, `ReferenceError`  
-C) `1`, `ReferenceError`, `ReferenceError`   
-D) `1`, `ReferenceError`
+A- `undefined`, `undefined`, `undefined`   
+B- `1`, `undefined`, `ReferenceError`  
+C- `1`, `ReferenceError`, `ReferenceError`   
+D- `1`, `ReferenceError`
 
 The correct choice is: **C**
 
@@ -365,11 +365,8 @@ The correct choice is: **C**
 * let and const have block scope, which means they are only accessible within the block where they are defined.
 
 Here's how the code behaves:
-
 1. var a = 1; is declared within the if block, but due to the nature of var being function-scoped, it's accessible throughout the testScope1 function. Therefore, when console.log(a); is executed outside the if block, a still holds the value 1, and it will print 1.
-
 2. let b = 2; is declared within the if block with block scope. This means it's not accessible outside the block in which it's defined. Therefore, when console.log(b); is executed outside the if block, b is out of scope, and a ReferenceError will occur, indicating that b is not defined.
-
 3. const c = 3; is also declared within the if block with block scope. Like let, it's not accessible outside the block in which it's defined. When console.log(c); is executed outside the if block, c is out of scope, and a ReferenceError will occur, indicating that c is not defined.
 
 ### [QUESTION #3:](https://github.com/orjwan-alrajaby/gsg-QA-Nablus-training-2023/blob/main/learning-sprint-1/week3%20-%20deep-javascript-foundations-v3/day%202/tasks.md)
@@ -390,25 +387,17 @@ testScope2();
 ```
 
 **Choices:**
-
-A) `undefined`, `ReferenceError`   
-B) `1`, `undefined`, `ReferenceError`   
-C)`undefined`, `undefined`,
-`ReferenceError`  
-D) `1`, `ReferenceError`
+A- `undefined`, `ReferenceError`   
+B- `1`, `undefined`, `ReferenceError`   
+C- `undefined`, `undefined`, `ReferenceError`  
+D- `1`, `ReferenceError`
 
 The correct choice is: **A**
-
 1. console.log(a); is executed before the if block. Since var declarations are hoisted to the top of their containing function or global scope, the variable a is declared in the function scope and initialized to undefined at the beginning of the function. Therefore, console.log(a); will print undefined.
-
 2. console.log(b); is executed before the if block. However, the variable b is declared with let inside the if block, and its scope is limited to that block. It's not accessible before its declaration, which results in a ReferenceError.
-
 3. console.log(c); is also executed before the if block. Similar to let, the variable c is declared with const inside the if block, and its scope is limited to that block. Like let, it's not accessible before its declaration, resulting in a ReferenceError.
-
 4. Inside the if block, var a = 1; declares a within the block scope. This declaration is hoisted to the top of the function, effectively overriding the previous declaration of a and initializing it with the value 1.
-
 5. Inside the if block, let b = 2; declares b within the block scope. This declaration is not hoisted to the top of the function. Therefore, this b is a different variable from the one used outside the if block.
-
 6. Inside the if block, const c = 3; declares c within the block scope. Like let, this declaration is not hoisted to the top of the function. This c is also a different variable from the one used outside the if block.
 
 
@@ -437,24 +426,18 @@ testScope3();
 ```
 
 **choices:**
-
-A) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 36, 2, 3 ]`   
-B) `[ 36, 100, 45 ]` | `[1, 2, 3 ]` | `[ 36, 100, 45 ]`   
-C) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1,100, 45 ]`   
-D) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1, 2, 3 ]`
+A- `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 36, 2, 3 ]`   
+B- `[ 36, 100, 45 ]` | `[1, 2, 3 ]` | `[ 36, 100, 45 ]`   
+C- `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1,100, 45 ]`   
+D- `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1, 2, 3 ]`
 
 
 The correct choice is: **C**
-
 1. At the beginning of the testScope3 function, var a = 36;, let b = 100;, and const c = 45; declare and initialize three variables: a with var, b with let, and c with const. These variables are function-scoped and are accessible within the entire function.
-
 2. The first console.log([a, b, c]); logs the values of the initial declarations, which are [36, 100, 45].
-
 3. Inside the if block:
-
     * var a = 1; reassigns the value of a to 1. This affects the previously declared a in the outer scope.
     * let b = 2; declares a new variable b with block scope. This does not affect the b declared in the outer scope.
     * const c = 3; declares a new variable c with block scope. This does not affect the c declared in the outer scope.
     * The second console.log([a, b, c]); logs the values within the if block, which are [1, 2, 3].
-  
 4. After the if block, the final console.log([a, b, c]); logs the values of the variables in the outer scope, where a has been reassigned to 1 within the if block, b is still 100, and c is still 45.
