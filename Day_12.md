@@ -149,7 +149,7 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/6ee07543-427d-4d00-a32b-dff163e764c8)
 
-#### The case for preferring ==
+#### The case for preferring Double Equals (==)
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9fa053fc-48b1-421c-b922-55a17b412be0)
 
@@ -163,23 +163,18 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 > ***Summary***: whether the types match or not, `==` is the more sensible choice.
 
 #### If you ***don't know*** the type(s) in a comparison:
-
 * The uncertainty of not knowing types should be obvious to reader The most obvious signal is `===`.
 * Not knowing the types is equivalent to assuming type conversion Because of corner cases, the only safe choice is `===`.
 
 > ***Summary***: if you can't or won't use known and obvious types, `===` is the only reasonable choice.
 
 #### **NOTEs**: 
-
 making types known and obvious leads to better code. 
-
 If types are known, `==` is best.
-
 Otherwise, fall back to `===`.
 
 
-### **Exercise:**
-
+#### Douple Equal Exercise:
 **Wrangling Equality**
 
 In this exercise, you will define a `findAll(..)` function that searches an array and returns an array with all coercive matches.
