@@ -129,7 +129,7 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/30f2144c-56a2-4c01-a66a-f8efc75bf440)
 
-#### == Summary:
+#### Double Equals Summary:
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/f4cec410-1f15-48ba-8711-96ae661fb7e6)
 
