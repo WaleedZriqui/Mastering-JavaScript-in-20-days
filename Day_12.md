@@ -132,7 +132,7 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 
 #### Double Equals Summary:
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/f4cec410-1f15-48ba-8711-96ae661fb7e6)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2a91f562-5e07-4dd6-9dad-5e5585d359be)
 
 
 #### Double Equals Corner Cases
