@@ -137,8 +137,8 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 
 #### Double Equals Corner Cases
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/2cdf15e0-0dca-4ff0-9de1-836c9d32e9ce)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9ee2d25b-8abc-4bd5-a76d-7a5d7d201ae3)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/45b642b2-30c9-4274-980b-ca5a9d504f7a)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/c90742cd-4f76-41d3-9459-45e0595ecc53)
 
 #### Double Equals Corner Cases: Booleans
 
