@@ -102,8 +102,7 @@ console.log(hoursAttended("6.1","10.1") === false);
 ```
 
 
-
-### Equality  == Vs. ===
+#### Equality  == Vs. ===
 
 This is NOT true:
 - `==` checks value (loose).
@@ -117,62 +116,60 @@ This is True:
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b9f7ac84-759e-4a5d-8dee-5d22e74428fd)
 
 
-### Coercive Equality
+#### Coercive Equality
 
 For the most part, you have the option of treating null and undefined as indistinguishable through coercive equality. Whether the property was ever created and has been reset back to null, or whether it's been reset back to undefined, or whether it was never created at all. Those are basically all the same condition, or at least I would argue, that's a better way to code, to treat those as indistinguishable.
 As shown in pic below in the second code:
- 
+
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/b5f491b8-5fd8-48b1-bfb9-0f90605fdbe7)
 
 
-### Double Equals Algorithm
+#### Double Equals Algorithm
 If I had a triple equals and they were different types, it's always gonna fail. So I'm gonna have to make numbers. But if I know there can only be number or string, especially if one of them is definitely a number, then an exactly the same way as I allow this with the last things sign, several sides ago, why not also allow with the double equals, why not say that this code online for is more noisy unnecessarily so and the abstraction of the double equals it's helpful here.
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/30f2144c-56a2-4c01-a66a-f8efc75bf440)
 
-### == Summary:
+#### == Summary:
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/f4cec410-1f15-48ba-8711-96ae661fb7e6)
 
 
-### == Corner Cases
+#### Double Equals Corner Cases
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/2cdf15e0-0dca-4ff0-9de1-836c9d32e9ce)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9ee2d25b-8abc-4bd5-a76d-7a5d7d201ae3)
 
-### == Corner Cases: Booleans
+#### Double Equals Corner Cases: Booleans
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/59f816de-dd0c-4c8a-b026-b4ce66ccbbdd)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9be32b47-5a98-443e-bd99-5f88a42a6223)
 
 
-### Corner Cases: Summary
+#### Corner Cases: Summary
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/133c74fe-8527-4722-93c7-298abe0b8f4f)
 
-### The case for preferring ==
+#### The case for preferring ==
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9fa053fc-48b1-421c-b922-55a17b412be0)
 
 
-📌  If you ***know*** the type(s) in a comparison:
-
+#### When we ***know*** the type(s) in a comparison:
 * If both **types** are ***the same***, `==` is identical to `===`. Using `===` would be unnecessary, so prefer the shorter `==`.
 * If the **types** are ***different***, using one `===` would be broken. Prefer the more powerful `==` or don't compare at all.
 * If the **types** are ***different***, the equivalent of one `==` would be two (or more!) `===` (ie, "slower"). Prefer the "faster" single `==`.
 * If the **types** are ***different***, two (or more!) `===` comparisons may distract the reader Prefer the cleaner single `==`.
 
-💡 ***Summary***: whether the types match or not, `==` is the more sensible choice.
+> ***Summary***: whether the types match or not, `==` is the more sensible choice.
 
-📌 If you ***don't know*** the type(s) in a comparison:
+#### If you ***don't know*** the type(s) in a comparison:
 
 * The uncertainty of not knowing types should be obvious to reader The most obvious signal is `===`.
 * Not knowing the types is equivalent to assuming type conversion Because of corner cases, the only safe choice is `===`.
 
-💡 ***Summary***: if you can't or won't use known and obvious types, `===` is the only reasonable choice.
+> ***Summary***: if you can't or won't use known and obvious types, `===` is the only reasonable choice.
 
-#### 💡 **NOTE**: 
-***Summary:*** 
+#### **NOTEs**: 
 
 making types known and obvious leads to better code. 
 
