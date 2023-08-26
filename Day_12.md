@@ -277,8 +277,9 @@ console.log(setsMatch(findAll(false,values),[false,0]) === false);
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/fb659e18-c9ab-4744-b8bc-5bf53ed2330c)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/100442bd-d4b0-41ce-8907-a1b709c9ec2e)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/7c6a1acc-6125-4d9b-bedd-56d1dcc21b7b)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/a65325ee-e16a-4b98-aa74-7accc3f8f08a)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f1344c21-388a-4445-b7b2-62fa9f83ab63)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/496e4fdb-d275-44eb-b632-f04d65f5dbc9)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d5f0b69d-3edf-48e1-8d1d-09ad16e09c7c)
 
 
 
