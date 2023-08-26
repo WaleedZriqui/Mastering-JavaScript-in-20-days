@@ -147,7 +147,7 @@ If I had a triple equals and they were different types, it's always gonna fail. 
 
 #### Corner Cases: Summary
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/133c74fe-8527-4722-93c7-298abe0b8f4f)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/6ee07543-427d-4d00-a32b-dff163e764c8)
 
 #### The case for preferring ==
 
