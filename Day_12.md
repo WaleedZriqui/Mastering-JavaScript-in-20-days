@@ -275,8 +275,8 @@ console.log(setsMatch(findAll(false,values),[false,0]) === false);
 2. Annotations are optional 
 3. Any part of the application that isn't typed introduces uncertainty
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/71b77e4b-6977-4543-847b-36ab4785c572)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/1c3900ca-ba14-476e-a928-230b0f46c6f7)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/fb659e18-c9ab-4744-b8bc-5bf53ed2330c)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/100442bd-d4b0-41ce-8907-a1b709c9ec2e)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/7c6a1acc-6125-4d9b-bedd-56d1dcc21b7b)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/a65325ee-e16a-4b98-aa74-7accc3f8f08a)
 
