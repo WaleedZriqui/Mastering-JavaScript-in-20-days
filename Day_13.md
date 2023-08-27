@@ -58,14 +58,14 @@ By this we will prevent the `Auto Global`
 > Summary: **Undeclared** *doesn't exist*, **Undefined** definitely does *exist*, but *doesn't have a value*.
 
 
-### Lexical Scope Elevator
+#### Lexical Scope Elevator
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/1c23b997-3e14-47f4-9eb8-5e9be6cd7219)
 ---------------------------------------------------------------------------------------------------------------------
 
-### Scope & Function Expressions 
-
+#### Scope & Function Expressions 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/c861dc77-7b6f-4bd9-9ae0-dcea5db29c8c)
+The differance between function declaration and function expression is that function declaration add their name and attach their marble to the enclosing scope, while the function expression will add their marble to their scope 
 
 
 #### Named Function Expressions:
