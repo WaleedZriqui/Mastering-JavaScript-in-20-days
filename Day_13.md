@@ -32,12 +32,12 @@ Virtual Machine for JS will excute the code after finishing the compilation proc
 
 ####  Auto Global: 
 
-📌 If I try to use varible in cuurent scope without declaring it, it will be delared in the globale scope.
+> If I try to use varible in cuurent scope without declaring it, it will be delared in the globale scope.
 
 So if you try to assign to a variable that's never been formally declared. Once you arrive at the global scope, if you say hey, global scope, I'm looking for this marble called topic, ever heard of it? And the global scope instead of saying nope, sorry error, the global scope's gonna say I just created one for you.
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/48449ad7-bb82-429b-a7fd-0538ddf201a0)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/72ba93a4-7e54-4a6f-bfa4-568760672715)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2ad27dbc-52e0-4886-9d8a-e5fb47e1f1f7)
 
 
 ### Strict Mode:
