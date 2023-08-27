@@ -24,15 +24,10 @@ We're going to pretend as if a conversation is happening in this processing of t
 * Having two varibles with same name in different scopes called ***shadowing***.
 * All of the scopes that we're dealing with, all of the lexical scopes and identifiers, that's all determined at compile time. It's not determined at run time. It is ***used*** at ***run time***, but it is ***determined*** at ***compile time***.
 
-#### **Before executing the code :**
-
-1. Scope maneger detrmine the scope.
-2. Then bring data or store it in the variable.
-
 #### Execute the code
 
+Virtual Machine for JS will excute the code after finishing the compilation process
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d9a325e3-6639-4a16-9e50-7e622dde0702)
-
 
 
 ####  Auto Global: 
