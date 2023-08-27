@@ -27,7 +27,7 @@ We're going to pretend as if a conversation is happening in this processing of t
 #### Execute the code
 
 Virtual Machine for JS will excute the code after finishing the compilation process
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d9a325e3-6639-4a16-9e50-7e622dde0702)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/6f19ed8c-c159-4ee9-911c-dcaecd1a8b4b)
 
 
 ####  Auto Global: 
