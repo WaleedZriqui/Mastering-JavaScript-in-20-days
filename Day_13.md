@@ -96,17 +96,14 @@ The differance between function declaration and function expression is that func
 > Summary: (Named) Function Declaration > Named Function Expression > Anonymous Function Expression.
 
 
-### Function Expression Exercise
-
-**Function Expressions**
-
+#### Function Expression Exercise
 In this exercise, you will be writing some functions and function expressions, to manage the student enrollment records for a workshop.
 
 **Note:** The spirit of this exercise is to use functions wherever possible and appropriate, so consider usage of array utilities `map(..)`, `filter(..)`, `find(..)`, `sort(..)`, and `forEach(..)`.
 
 **Instructions (Part 1)**
 
-**Note:** In Part 1, use only function declarations or named function expressions.
+In Part 1, use only function declarations or named function expressions.
 
 You are provided three functions stubs -- `printRecords(..)`, `paidStudentsToEnroll()`, and `remindUnpaid(..)` -- which you must define.
 
@@ -135,8 +132,6 @@ Now that you've completed Part 1, refactor to use **only** `=>` arrow functions.
 For `printRecords(..)`, `paidStudentsToEnroll()`, and `remindUnpaid(..)`, assign these arrow functions to variables of such names, so that the execution still works.
 
 As the appeal of `=>` arrow functions is their conciseness, wherever possible try to use only expression bodies (`x => x.id`) instead of full function bodies (`x => { return x.id; }`).
-
-### Function Expression Solutions:
 
 #### Using *Functions*
 
@@ -251,48 +246,6 @@ var remindUnpaid = recordIds =>
 	printRecords(
 		recordIds.filter(studentId => !getStudentFromId(studentId).paid)
 	);
-
-
-// ********************************
-
-var currentEnrollment = [ 410, 105, 664, 375 ];
-
-var studentRecords = [
-	{ id: 313, name: "Frank", paid: true, },
-	{ id: 410, name: "Suzy", paid: true, },
-	{ id: 709, name: "Brian", paid: false, },
-	{ id: 105, name: "Henry", paid: false, },
-	{ id: 502, name: "Mary", paid: true, },
-	{ id: 664, name: "Bob", paid: false, },
-	{ id: 250, name: "Peter", paid: true, },
-	{ id: 375, name: "Sarah", paid: true, },
-	{ id: 867, name: "Greg", paid: false, },
-];
-
-printRecords(currentEnrollment);
-console.log("----");
-currentEnrollment = paidStudentsToEnroll();
-printRecords(currentEnrollment);
-console.log("----");
-remindUnpaid(currentEnrollment);
-
-/*
-	Bob (664): Not Paid
-	Henry (105): Not Paid
-	Sarah (375): Paid
-	Suzy (410): Paid
-	----
-	Bob (664): Not Paid
-	Frank (313): Paid
-	Henry (105): Not Paid
-	Mary (502): Paid
-	Peter (250): Paid
-	Sarah (375): Paid
-	Suzy (410): Paid
-	----
-	Bob (664): Not Paid
-	Henry (105): Not Paid
-*/
 ```
 
 
@@ -317,5 +270,4 @@ one with them with a reasoning.
 The output is 10. The reason is that the function inner1 is defined within the scope of the outer1 function. Since inner1 is a closure, it retains access to the variables in its surrounding scope, even after outer1 has finished executing. When inner1() is called, it logs the value of x, which is 10, because it has access to the x variable in its lexical scope.
 
 **Example 2:**
-**My Solution:**
 The output is 20, and the reason for that is the inner2 function creates its own local variable x with a value of 20 within its scope using var x = 20. This local variable x is separate from the x variable defined in the outer scope of outer2(). When inner2() is called, it logs the value of its own local x, which is 20. This demonstrates the concept of variable shadowing, where a local variable with the same name as an outer variable effectively hides the outer variable within the inner scope.
