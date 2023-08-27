@@ -133,8 +133,7 @@ For `printRecords(..)`, `paidStudentsToEnroll()`, and `remindUnpaid(..)`, assign
 
 As the appeal of `=>` arrow functions is their conciseness, wherever possible try to use only expression bodies (`x => x.id`) instead of full function bodies (`x => { return x.id; }`).
 
-#### Using *Functions*
-
+1. Using *Functions*
 ```javaScript
 function getStudentFromId(studentId) {
 	return studentRecords.find(function matchId(record){
@@ -220,7 +219,7 @@ remindUnpaid(currentEnrollment);
 */
 ```
 
-#### Using *Arrow Functions*
+2. Using *Arrow Functions*
 
 ```javaScript
 var getStudentFromId = studentId => studentRecords.find(record => record.id == studentId);
