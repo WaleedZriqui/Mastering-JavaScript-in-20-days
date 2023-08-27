@@ -68,11 +68,11 @@ By this we will prevent the `Auto Global`
 The differance between function declaration and function expression is that function declaration add their name and attach their marble to the enclosing scope, while the function expression will add their marble to their scope 
 
 
-#### Named Function Expressions:
+### Named Function Expressions:
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/12b00038-2c9a-4673-bbd1-c30608418a85)
 
-##### Function Declaration vs. Function Expression 
+#### Function Declaration vs. Function Expression 
 
 * ***Function Declaration***: if the word function is literally the first thing in the statement.
 * ***Function Expression***: if there's a variable or an operator or parentheses or anything, then it's not a declaration, it is An expression.Line one, I'm declaring a function expression.
@@ -88,7 +88,7 @@ The differance between function declaration and function expression is that func
 2. More debuggable stack traces.
 3. More self-documenting code.
 
-### Arrow Functions
+#### Arrow Functions
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/0e42d266-8f3e-47c7-a45d-1a34a07bff1c)
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/6059a5e9-077e-4841-8905-8393c7ff420c)
