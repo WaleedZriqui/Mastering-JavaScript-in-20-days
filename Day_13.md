@@ -1,12 +1,12 @@
 # Day 13 
 
-This README file summarizes the Scope & Function Expressions
+This README file summarizes the Scope (Nested Scope, Hoisting, Closure, Modules) & Function Expressions
 
 ## Lesson Summary
 
 ###  Scope 
 **Scope**: where to look for things.
-JavaScript organizes scopes with ***functions*** and ***blocks***.
+> JavaScript organizes scopes with `functions` and `blocks`.
 
 #### Compilation & Scope
 
@@ -17,13 +17,12 @@ We're going to pretend as if a conversation is happening in this processing of t
 1. And that'll be our first pass through the program, is that **compilation step**. 
 2. And then after we've set up all those plans, then we'll come back and **execute the code**. 
 
-
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/022e19b0-da0b-4df2-b32b-43505444f2aa)
 
 
 #### 💡 **NOTE**: 
-> * Having two varibles with same name in different scopes called ***shadowing***.
-> * All of the scopes that we're dealing with, all of the lexical scopes and identifiers, that's all determined at compile time. It's not determined at run time. It is ***used*** at ***run time***, but it is ***determined*** at ***compile time***.
+* Having two varibles with same name in different scopes called ***shadowing***.
+* All of the scopes that we're dealing with, all of the lexical scopes and identifiers, that's all determined at compile time. It's not determined at run time. It is ***used*** at ***run time***, but it is ***determined*** at ***compile time***.
 
 #### **Before executing the code :**
 
