@@ -17,7 +17,7 @@ We're going to pretend as if a conversation is happening in this processing of t
 1. And that'll be our first pass through the program, is that **compilation step**. 
 2. And then after we've set up all those plans, then we'll come back and **execute the code**. 
 
-![Uploading image.png…]()
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/c4c9e1f3-996a-493b-af07-4b743b333255)
 
 
 #### 💡 **NOTE**: 
