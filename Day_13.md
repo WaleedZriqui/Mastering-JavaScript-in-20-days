@@ -20,7 +20,7 @@ We're going to pretend as if a conversation is happening in this processing of t
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/c4c9e1f3-996a-493b-af07-4b743b333255)
 
 
-#### 💡 **NOTE**: 
+#### **NOTE**: 
 * Having two varibles with same name in different scopes called ***shadowing***.
 * All of the scopes that we're dealing with, all of the lexical scopes and identifiers, that's all determined at compile time. It's not determined at run time. It is ***used*** at ***run time***, but it is ***determined*** at ***compile time***.
 
@@ -30,7 +30,7 @@ Virtual Machine for JS will excute the code after finishing the compilation proc
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/6f19ed8c-c159-4ee9-911c-dcaecd1a8b4b)
 
 
-####  Auto Global: 
+#### Auto Global: 
 
 > If I try to use varible in cuurent scope without declaring it, it will be delared in the globale scope.
 
@@ -43,7 +43,7 @@ So if you try to assign to a variable that's never been formally declared. Once 
 #### Strict Mode:
 By this we will prevent the `Auto Global`
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/abbeddea-c737-4b76-85f2-97fcb17de535)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/1d6c3e7b-08c1-4d53-8573-9c07cc18341b)
 
 #### Nested Scope:
 
