@@ -40,19 +40,17 @@ So if you try to assign to a variable that's never been formally declared. Once 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/2ad27dbc-52e0-4886-9d8a-e5fb47e1f1f7)
 
 
-### Strict Mode:
-
-📌 This will prevent Auto Global.
+#### Strict Mode:
+By this we will prevent the `Auto Global`
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/abbeddea-c737-4b76-85f2-97fcb17de535)
 
-### Nested Scope:
+#### Nested Scope:
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/16a397cb-0a75-4383-9d88-33db69e8b7ef)
 
 
-
-### Undefined vs. Undeclared
+#### Undefined vs. Undeclared
 
 * ***Undefined:*** means a ***variable exists*** but at the moment ***it has no value***.It may have never had a value or it might have used to have a value and it doesn't anymore but there is no other value in the vacuum of space it is undefined.
 * ***Undeclared:*** undeclared is actually ***never formally declared*** in any scope that we have accessed to.
@@ -63,7 +61,7 @@ So if you try to assign to a variable that's never been formally declared. Once 
 ### Lexical Scope Elevator
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9c3ed351-b6be-4588-a956-03699edef1c0)
-
+---------------------------------------------------------------------------------------------------------------------
 
 ### Scope & Function Expressions 
 
