@@ -60,7 +60,7 @@ By this we will prevent the `Auto Global`
 
 ### Lexical Scope Elevator
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/9c3ed351-b6be-4588-a956-03699edef1c0)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/1c23b997-3e14-47f4-9eb8-5e9be6cd7219)
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Scope & Function Expressions 
