@@ -90,13 +90,10 @@ The differance between function declaration and function expression is that func
 
 #### Arrow Functions
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/0e42d266-8f3e-47c7-a45d-1a34a07bff1c)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/6059a5e9-077e-4841-8905-8393c7ff420c)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/058349fc-3a29-4b40-8b95-fbd094726b10)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/55ba13c9-9559-4b4d-a02e-fa38272a69c2)
 
-
-#### 💡 **NOTE**: 
-
-💡 ***Summary***: (Named) Function Declaration > Named Function Expression > Anonymous Function Expression.
+> Summary: (Named) Function Declaration > Named Function Expression > Anonymous Function Expression.
 
 
 ### Function Expression Exercise
