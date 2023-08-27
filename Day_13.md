@@ -64,7 +64,7 @@ By this we will prevent the `Auto Global`
 ---------------------------------------------------------------------------------------------------------------------
 
 #### Scope & Function Expressions 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/c861dc77-7b6f-4bd9-9ae0-dcea5db29c8c)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/3c30e9ff-516b-479a-b380-b04e8107f1b0)
 The differance between function declaration and function expression is that function declaration add their name and attach their marble to the enclosing scope, while the function expression will add their marble to their scope 
 
 
