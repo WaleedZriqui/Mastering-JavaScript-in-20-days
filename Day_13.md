@@ -47,7 +47,7 @@ By this we will prevent the `Auto Global`
 
 #### Nested Scope:
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/16a397cb-0a75-4383-9d88-33db69e8b7ef)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/9cad27b0-89c9-4cbb-9710-ed84f441d70a)
 
 
 #### Undefined vs. Undeclared
@@ -55,7 +55,7 @@ By this we will prevent the `Auto Global`
 * ***Undefined:*** means a ***variable exists*** but at the moment ***it has no value***.It may have never had a value or it might have used to have a value and it doesn't anymore but there is no other value in the vacuum of space it is undefined.
 * ***Undeclared:*** undeclared is actually ***never formally declared*** in any scope that we have accessed to.
 
-💡 ***Summary***: **Undeclared** *doesn't exist*, **Undefined** definitely does *exist*, but *doesn't have a value*.
+> Summary: **Undeclared** *doesn't exist*, **Undefined** definitely does *exist*, but *doesn't have a value*.
 
 
 ### Lexical Scope Elevator
