@@ -61,7 +61,7 @@ By this we will prevent the `Auto Global`
 #### Lexical Scope Elevator
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/1c23b997-3e14-47f4-9eb8-5e9be6cd7219)
----------------------------------------------------------------------------------------------------------------------
+
 
 #### Scope & Function Expressions 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/3c30e9ff-516b-479a-b380-b04e8107f1b0)
@@ -70,7 +70,7 @@ The differance between function declaration and function expression is that func
 
 #### Named Function Expressions:
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/75152a16-d63e-4624-a491-6146453c905d)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/12b00038-2c9a-4673-bbd1-c30608418a85)
 
 ##### Function Declaration vs. Function Expression 
 
