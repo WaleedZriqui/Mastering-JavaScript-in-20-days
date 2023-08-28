@@ -31,3 +31,4 @@ Iam using this page to show an overview of my progrss in this journey (List of C
 -  [**Day 11**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day_11.md)
 -  [**Day 12**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day_12.md)
 -  [**Day 13**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day_13.md)
+-  [**Day 14**](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/blob/main/Day_14.md)
