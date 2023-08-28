@@ -21,6 +21,7 @@ lex → the first stage of parsing.
 
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/58da24ae-a73d-423e-92a6-081d6d433f3e)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7164e186-ef5b-4c83-80a1-a02fd343dfd9)
 
 
 ```javaScript
