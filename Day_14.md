@@ -20,6 +20,7 @@ The idea that a compiler is figuring out all the scopes ahead of time befor bein
 ### Function Scoping 
 
 > You  should default to keep everything private and only exposing the minimal necessary.
+
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/c3619e9e-0acc-4252-b5c6-95317e9202c6)
 
 
@@ -45,7 +46,7 @@ f()
 
 > Block(curly braces) are not scope until they have let or const inside them.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/b7688729-0bcb-4548-98e6-522e41833e0f)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/335477ce-022e-40b9-8c14-50492c4e106c)
 
 
 
