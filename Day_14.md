@@ -20,11 +20,11 @@ lex → the first stage of parsing.
 * while ***lexical scope*** is determined at auther time. It's predictable, it's not affected by run time conditions
 
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/17982f57-73ac-46e1-b47a-1cd63d59c0ab)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/58da24ae-a73d-423e-92a6-081d6d433f3e)
 
 
 ```javaScript
-const n = "Aya"
+const n = "Waleed"
 
 function f(){
     console.log(n);
@@ -36,7 +36,7 @@ function ff(){
 }
 
 ff();
-// Aya => lexical
+// Waleed => lexical
 // Hello => dynamic
 ```
 
