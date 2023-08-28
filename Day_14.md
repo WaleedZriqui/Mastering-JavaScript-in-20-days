@@ -59,7 +59,7 @@ f()
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f6a8ac93-6bc6-4d4f-9266-249149e99bd3)
 
 
-### Hoisting
+#### Hoisting
 - **Hoisting** is the process of moving variable and function declarations to the top of their scope.
 - Variable declarations are hoisted but not their assignments. They are accessible but have an initial value of `undefined`.
 - Function declarations are also hoisted, allowing them to be called before they are defined.
@@ -73,7 +73,7 @@ f()
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/d0534964-5dab-40cd-8b05-efdaaccbd7ac)
 
-### let & hoisting 
+#### let & hoisting 
 We can’t say that let doesn't have hoisting, instead it’s kind of uninitialized state.
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d8da258d-811a-429d-9139-532db3791625)
