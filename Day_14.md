@@ -7,44 +7,18 @@ This README file summarizes the Advanced Scope (lexical scope, dynamic scope)
 ### Advanced Scope 
 
 #### lexical scope 
-
 The idea that a compiler is figuring out all the scopes ahead of time befor being executed. 
 
-lex → the first stage of parsing.
-
-
 #### lexical scope VS. dynamic scope 
-
 * The scope of ***dynamic scope*** is determined based upon a conditions at runtime (where this function has been called).
-
 * while ***lexical scope*** is determined at auther time. It's predictable, it's not affected by run time conditions
-
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/58da24ae-a73d-423e-92a6-081d6d433f3e)
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7164e186-ef5b-4c83-80a1-a02fd343dfd9)
 
 
-```javaScript
-const n = "Waleed"
-
-function f(){
-    console.log(n);
-}
-
-function ff(){
-    const n = " Hello";
-    f();
-}
-
-ff();
-// Waleed => lexical
-// Hello => dynamic
-```
-
-
 ### Function Scoping 
 
-> ### 📌 Principle of least privilege / Principle of least exposure:
 > You  should default to keep everything private and only exposing the minimal necessary.
 
 
