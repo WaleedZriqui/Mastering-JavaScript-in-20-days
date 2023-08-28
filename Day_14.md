@@ -54,6 +54,7 @@ f()
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/52bd8a48-8cad-4500-a029-95da2df6337c)
 
 #### const: 
+> Under the same block this attrobute i gurantee that it will not be reassigned
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/f6a8ac93-6bc6-4d4f-9266-249149e99bd3)
 
