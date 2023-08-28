@@ -43,7 +43,6 @@ f()
 
 #### Block Scoping 
 
-> ### 💡Note:
 > Block(curly braces) are not scope until they have let or const inside them.
 
 ![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/b7688729-0bcb-4548-98e6-522e41833e0f)
