@@ -78,12 +78,11 @@ We can’t say that let doesn't have hoisting, instead it’s kind of uninitiali
 
 ![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7583b404-5c8b-4413-be59-a58a068aa000)
 
-### Exercise:
 
+#### Hoisting Exercise:
 In this exercise, you will refactor some code that manages student enrollment records for a workshop, to take advantage of function hoisting.
 
 **Instructions**
-
 Refactor all inline function expressions to be function declarations. Place function declarations at the bottom (that is, below any executable code) of their respective scopes.
 
 Also, pull function declarations to outer scopes if they don't need to be nested.
