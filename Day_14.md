@@ -76,7 +76,7 @@ f()
 #### let & hoisting 
 We can’t say that let doesn't have hoisting, instead it’s kind of uninitialized state.
 
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/d8da258d-811a-429d-9139-532db3791625)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/7583b404-5c8b-4413-be59-a58a068aa000)
 
 ### Exercise:
 
