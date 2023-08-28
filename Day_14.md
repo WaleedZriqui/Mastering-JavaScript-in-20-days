@@ -37,12 +37,11 @@ f()
     console.log("hello")
 })()
 ```
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/7b653f0f-5949-4669-a4c6-a1cc49f291eb)
-![image](https://github.com/aya-thafer2/Mastering-JavaScript-in-20-Days/assets/121509832/179bf94c-b4d3-4651-8650-2423f73a9445)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/4080c26d-f427-47be-82da-25f2cdd4d64b)
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/5143d064-cefd-4561-a263-1180aca9ac8d)
 
 
-### Block Scoping 
-
+#### Block Scoping 
 
 > ### 💡Note:
 > Block(curly braces) are not scope until they have let or const inside them.
