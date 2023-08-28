@@ -20,6 +20,7 @@ The idea that a compiler is figuring out all the scopes ahead of time befor bein
 ### Function Scoping 
 
 > You  should default to keep everything private and only exposing the minimal necessary.
+![image](https://github.com/WaleedZriqui/Mastering-JavaScript-in-20-days/assets/90526475/c3619e9e-0acc-4252-b5c6-95317e9202c6)
 
 
 ### IIFE (Immediately Invoked Function Expression)
