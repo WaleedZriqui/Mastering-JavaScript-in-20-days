@@ -81,9 +81,9 @@ The scope is the current context of execution in which values and expressions ar
 
 Variables declared with let can be modified from within a narrower scope (nested) not wider 
 
-var: Variables declared with var are in the function scope 
-let: Variables declared as let are in the block scope
-const: Variables declared as const are in the block scope
+- var: Variables declared with var are in the function scope 
+- let: Variables declared as let are in the block scope
+- const: Variables declared as const are in the block scope
 
 
 ### Events & Handler 
