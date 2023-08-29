@@ -24,11 +24,12 @@ This README file summarizes Conditionals, loops, and Map & filter.
 
 ### Loops
 Loops let us run the same chunk of code multiple times
-   - For loop 
+   - For loop
    ```javascript
     for(let count=0; count<10; count++){ 
-    console.log(count)}
-    ```
+       console.log(count)
+    }
+   ```
    - while(condition){chunk of code} // let us run code over and over if condition is true
    - for ...of iterable loop: let us more easily iterate over items in a collection ,and we can use it to  iterate over characters in a string
       - With String   
