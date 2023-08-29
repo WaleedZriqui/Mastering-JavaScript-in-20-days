@@ -77,6 +77,7 @@ console.log(...skills) // Output: HTML CSS JS React TypesScript Node
 - JavaScript can only do one task at a time ("single-threaded").
 - When we give JavaScript a task that takes a while it doesnot stop and wait it adds the slow task to a TODO list and keeps on running our program the task runs sometimes later (Async) 
 > Synchronus: Same time 
+
 > Asynchronously: Not same time 
 - The setTimeout() method executes a block of code after the specified time. setTimeout(function , time in milliseconds) 
 ```javascript
