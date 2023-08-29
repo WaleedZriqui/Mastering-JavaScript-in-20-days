@@ -13,7 +13,7 @@ Arrays help in keeping multiple values together in an orderd collection.
 let synonyms = ["plethora", "array", "cornucopia"]
 
 synonyms.length // Output: 3, as the strings also arrays have a length
-synonyms[1] // Output: "plethora"
+synonyms[0] // Output: "plethora"
 synonyms.indexOf("cornucopia") // Output: 2, as the strings it starts from index 0
 synonyms.includes("plethora") // Output: true, check if an array contains attached value
 synonyms.includes("variety") // Output: false
