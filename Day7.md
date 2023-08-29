@@ -47,11 +47,11 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 const result = copyArrayAndManipulate([1, 2, 3], divideBy2);
 ```
 
-- From code above which is our Higher Order Function?
-* The outer function that takes in a function is our higher-order function (copyArrayAndManipulate)
+From code above which is our Higher Order Function?
+- The outer function that takes in a function is our higher-order function (copyArrayAndManipulate)
 
-- From code above which is our Callback Function
-* The function we insert is our callback function (multiplyBy2, divideBy2)
+From code above which is our Callback Function
+- The function we insert is our callback function (multiplyBy2, divideBy2)
 
 ### Functions in javascript = first class objects (Explian is 1-3 below 👇)
 They can co-exist with and can be treated like any other javascript object
