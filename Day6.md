@@ -7,7 +7,7 @@ This README file summarizes Data Fetch & Promises, Destructing Data, Async, Modu
 ###  Data Fetch:
 > * **URLs** point to resources on the web.
 > * **APIs (Application Programming Interface)** services that are exposing a whole bunch of data at acertin URLs, provide URLs that point at data we care about.
-The way that let us load data fron API in JS is by using the bulit in function fetch()
+The way that let us load data from API in JS is by using the bulit in function fetch()
 - fetch("https://dog.ceo/api/breed/hound/list")
 ->But if we run it in the console, we will see something weird ..
 ```javaScript
