@@ -67,9 +67,6 @@ An arrow function expression is a compact alternative to a traditional function 
 const multiplyBy2 = input => input*2 // because it's one attribure here and one row for the code
 ```
 
-### Pair Programming 
-<img>
-
 
 ## Coding Exercise and my Solution:
 
