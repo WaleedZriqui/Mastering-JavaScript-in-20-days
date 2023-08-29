@@ -73,7 +73,7 @@ abcString; // Output: 'abc'
 // Do these do the same thing?
 
 let numbers1 = [1, 2, 3]
-let result1 = numbers1.push(4) z
+let result1 = numbers1.push(4)
 result1; // Output: [1, 2, 3, 4]
 numbers1;  // Output: [1, 2, 3, 4]
  
@@ -158,7 +158,7 @@ indicisive.lunch; //Output: "Sandwich"
 indicisive.lunch = "tacos"; 
 indicisive.lunch; //Output: "tacos"
 indicisive.snack = "Chips"
-indicisive.lunch; //Output: "Chips"
+indicisive.snack; //Output: "Chips"
 ```
 
 #### How we can access a property in the Ojbect:
